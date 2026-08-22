@@ -13,7 +13,7 @@ def calculadoura_basica():
     print("Multiplicação", multi)
     print("Subtração", subtracao)
     print("Divisão", divisao)
-     #finalizei a calculadora básica.
+     #finalizei a calculadora básica e realizei ajuste na parte da divisão para não dar erro caso o usuário digite 0.
 def calcular_bhaskara():
     a = float(input("Digite o valor de a: "))
     b = float(input("Digite o valor de b: "))
