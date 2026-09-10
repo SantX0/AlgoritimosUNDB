@@ -1,3 +1,11 @@
 # CRUD UNDB
-Idea do CRUD: Uma simulação de upload de uma musica no spotify
-Repositório de trabalhos e atividade.
+Entidade princiapl: Spotify
+A Simulação: Upload de Musica
+As sub entidades: 
+    Artista :  String/Int
+		Nome da Musica : String/Int
+		Data De Lançamento : 
+		Hora De Lançamento : Time
+		Autores e Produtores : String
+		Tipo de Arquivo : String
+		Tamanho do Arquivo : Float
