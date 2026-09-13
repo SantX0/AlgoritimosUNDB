@@ -1,3 +1,4 @@
+
 # ============ LISTAS DE VALIDAÇÃO ============
 generos_validos = ["Rock","Pop","Sertanejo", "Rap", "Eletronica", "MPB"]
 tipos_permitidos = ["mp3", "wav", "flac", "m4a"]
