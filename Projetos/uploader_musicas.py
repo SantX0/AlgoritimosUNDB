@@ -420,6 +420,16 @@ while True:
                     )
 
                     # ---------- Submenu: qual campo alterar ----------
+                    print("1 - Gêneros")
+                    print("2 - Artista")
+                    print("3 - Nome da Musica")
+                    print("4 - Duração")
+                    print("5 - Data De Lançamento")
+                    print("6 - Hora De Lançamento")
+                    print("7 - Auotores")
+                    print("8 - Produtores")
+                    print("9 - Tipo De Arquivo")
+                    print("10 - Nome Do Arquivo")
                     campo_escolhido = input(
                         "\nQual campo deseja alterar? (0 para cancelar):\n"
                     )
