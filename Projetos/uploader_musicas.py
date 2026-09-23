@@ -35,6 +35,7 @@ while True:
     print("4 - Atualizar música")
     print("5 - Excluir música")
     print("6 - Sair")
+    print("7 - Relatorio")
     print("=====================================")
 
     opcao = input("Escolha uma opção:\n")
@@ -650,7 +651,87 @@ while True:
                     else:
                         print("Exclusão cancelada.")
 
-    else:
+    elif opcao == "6":
         # ============ OPÇÃO 6 - SAIR ============
         print("Encerrando o programa. Até mais!")
         break
+    elif opcao == "7":
+        if musicas == 0:
+            print("Nenhuma música cadastrada.")
+        else:
+            print("======= RELATÓRIOS ========")
+            print("1 - Resumo Geral")
+            print("2 - Música mais longa e mais curta")
+            print("3 - Quantidade por gênero")
+            print("4 - Enviadas vs Falhas")
+            tipo_relatorio = int(input("Escolha:\n"))
+            
+            if tipo_relatorio == 1:
+                #---------- RESUMO GERAL ----------
+                # total, soma e média de duração, soma de MB
+                
+                soma_duracao = 0
+                soma_mb = 0
+                
+                for musica_atual in musicas:
+                    soma_duracao = soma_duracao + musica_atual [IND_DURACAO_SEG]
+                    soma_mb = soma_mb + musica_atual [IND_TAMANHO_MB]
+                    
+                
+                total = len(musicas)
+                media_duracao = soma_duracao / total
+                media_mb = soma_mb / total
+                
+                print("Total de músicas:", total)
+                print("Duração somada:", soma_duracao, "segundos")
+                print("Média de duração:", media_duracao,"segundos" )
+                print("Espaço somado:", soma_mb, "MB")
+                print("Média de espaço:", soma_mb % total, "MB por")
+                
+            elif tipo_relatorio == 2:
+                    #---------- MAIS LONGA E MAIS CURTA ----------
+                    # gurada a POSIIÇÃO, não o valor - para poder mostrar o nome depois
+                    pos_longa = 0
+                    pos_curta = 0
+                    
+                    for i in range(len(musicas)):
+                        if musicas[i][IND_DURACAO_SEG] > musicas[pos_longa][IND_DURACAO_SEG]:
+                            pos_longa = i
+                        if musicas[i][IND_DURACAO_SEG] < musicas[pos_curta][IND_DURACAO_SEG]:
+                            pos_curta = i
+                            print("Mais longa:",musicas[pos_longa][IND_NOME], "-",
+                                  musicas [pos_longa][IND_DURACAO_SEG], "segundos")
+                            print("Mais curta:", musicas[pos_curta][IND_NOME], "-",
+                                  musicas[pos_curta][IND_DURACAO_SEG], "segundos")
+                            
+                        
+            elif tipo_relatorio == 3:
+                #---------- QUANTIDADE POR GÊNERO ----------
+                # um contador por gênero
+                for genero_valido in generos_validos:
+                    contador_genero = 0
+                    for musica_atual in musicas:
+                        if musica_atual[IND_GENERO] == genero_valido:
+                            contador_genero = contador_genero + 1       
+                    print(generos_validos, ":", contador_genero, "música(s)")
+            
+            elif tipo_relatorio == 4:
+                #---------- ENVIADAS VS. FALHAS ----------
+                # dois contadores separados, decidios por um if no status
+                
+                qtd_enviadas = 0
+                qtd_falhas = 0
+                
+                for musicas_atual in musicas:
+                    if musicas_atual[IND_STATUS] == "enviado":
+                        qtd_enviadas = qtd_enviadas + 1
+                    else:
+                        qtd_falhas = qtd_falhas + 1
+                        
+                    print("Enviadas:", qtd_enviadas)
+                    print("Falhas:", qtd_falhas)
+                    if len(musicas) > 0:
+                        percentual = (qtd_enviadas * 100) / len(musicas)
+                        print("Percentual de sucesso:", percentual, "%")
+            else:
+                print("Tipo de relatório inválido.")
