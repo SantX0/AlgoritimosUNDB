@@ -735,3 +735,5 @@ while True:
                         print("Percentual de sucesso:", percentual, "%")
             else:
                 print("Tipo de relatório inválido.")
+    else:
+        print("Opção inválida")            
