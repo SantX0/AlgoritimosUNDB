@@ -4,6 +4,7 @@ Entidade principal: Spotify
 A Simulação: Upload de Musica
 -----------------------------
 As sub entidades:
+----------------------------
 Artista :  String
 Nome da Musica : String	
 Data De Lançamento : DataTime
