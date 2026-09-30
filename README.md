@@ -1,5 +1,5 @@
 # UPDS
-Entidade princiapl: Spotify
+Entidade principal: Spotify
 -----------------------------
 A Simulação: Upload de Musica
 -----------------------------
