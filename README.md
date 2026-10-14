@@ -2,7 +2,7 @@
 #UpSpot
 O UpSpot é um uploader de musicas feito para artistas independentes ou para 
 você lançar aquela musica engraçada que você fez com o seu amigo em uma
-madruga de sexta-feira
+madruga de sexta-feira dentro do aplicativo do spotify.
 
 #Funções:
 
