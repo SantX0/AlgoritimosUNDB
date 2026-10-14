@@ -4,7 +4,6 @@ você lançar aquela musica engraçada que você fez com o seu amigo em uma
 madruga de sexta-feira dentro do aplicativo do spotify.
 
 # Funções:
-
 # Cadastro
   Cadastrar musicas através da opção de cadastro para adicionar seu musica e quando vai ser lançadas.
 
