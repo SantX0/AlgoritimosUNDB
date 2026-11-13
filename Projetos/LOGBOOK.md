@@ -106,7 +106,7 @@ Atualize a cada commit (troque ⬜ por ✅).
 
 | Grupo | Item | Prazo | Preenchido | Commit |
 |:--:|---|---|:--:|:--:|
-| 1 | Identificação | 16/11 | ⬜ | ⬜ |
+| 1 | Identificação | 16/11 | ✅ | ✅ |
 | 1 | Registros dos Ciclos 01, 02, 03 e 04 | 16/11 | ⬜ | ⬜ |
 | 1 | Campo 01 — Instrumento de entrada | 16/11 | ⬜ | ⬜ |
 | 1 | Campo 02 — Aprofundamento | 16/11 | ⬜ | ⬜ |
@@ -163,7 +163,7 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 > **Sugestão de ordem:** (1) Identificação → (2) **Campo 01 primeiro, sem consulta** → (3) Registros dos Ciclos 01 a 04 → (4) Campo 02, com pesquisa.
 
 **Checklist do Grupo 1**
-- [ ] Identificação preenchida (app-base, link do repositório, dupla de revisão)
+- [x] Identificação preenchida (app-base, link do repositório, dupla de revisão)
 - [ ] Campo 01: 3 objetos de conhecimento, 3 lacunas, hipótese de até 5 linhas
 - [ ] Registros dos Ciclos 01, 02, 03 e 04 com os 7 itens
 - [ ] Campo 02: 2 referências com contribuição, hipótese revisada, 3 recursos
