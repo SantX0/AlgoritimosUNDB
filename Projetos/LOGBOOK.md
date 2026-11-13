@@ -29,7 +29,7 @@
 | **Professor** | Rondineli Seba Salomão |
 | **App-base do meu CRUD** | Spotify |
 | **Link do meu repositório** | https://github.com/SantX0/AlgoritimosUNDB |
-| **Dupla de revisão (Campo 05)** | Gael |
+| **Dupla de revisão (Campo 05)** | Davi Gael Lopes |
 | **Função neste ciclo** | _Autor do meu CRUD · Revisor do CRUD de um colega_ |
 
 ---
