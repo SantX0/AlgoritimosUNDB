@@ -1,7 +1,4 @@
 # ============ UPLOADER DE MÚSICAS - CRUD SEM LISTAS ============
-# Usa apenas: variáveis simples, if/elif/else, while, for..range,
-# input/print, int(), float(), str(), try/except e operadores.
-# Capacidade fixa: 3 músicas (slots), cada um com variáveis próprias.
 
 # ---------- LISTAS DE VALIDAÇÃO (viraram comparações) ----------
 # gêneros aceitos: Rock, Pop, Sertanejo, Rap, Eletronica, MPB
