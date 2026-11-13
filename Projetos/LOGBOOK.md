@@ -23,11 +23,11 @@
 
 | Campo | Preencha |
 |---|---|
-| **Nome do estudante** | _escreva aqui_ |
-| **Curso / Módulo** | _ex.: ADS · 2º período_ |
+| **Nome do estudante** | Marcos Oliveira Ferreira|
+| **Curso / Módulo** | ADS · 2º período_ |
 | **Unidade curricular** | Algoritmos e Programação — UnDB 2026.2 |
 | **Professor** | Rondineli Seba Salomão |
-| **App-base do meu CRUD** | _ex.: um app de delivery, um app de músicas…_ |
+| **App-base do meu CRUD** | Spotify |
 | **Link do meu repositório** | _https://github.com/…_ |
 | **Dupla de revisão (Campo 05)** | _nome do colega cujo CRUD vou revisar / que revisa o meu_ |
 | **Função neste ciclo** | _Autor do meu CRUD · Revisor do CRUD de um colega_ |
