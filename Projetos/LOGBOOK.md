@@ -182,13 +182,22 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 </details>
 
 #### Registro do Ciclo 01 — 12/08
-1. **Desafio do ciclo (em 1 frase):** _…_
-2. **O que implementei (commits / arquivos / links):** _…_
-3. **Objeto(s) de conhecimento mobilizado(s):** _…_
-4. **Desvio ou erro encontrado + causa técnica:** _…_
-5. **Decisão de ajuste + fonte:** _…_
-6. **Feedback recebido e o que mudei:** _…_
-7. **Próximo passo:** _…_
+1. **Desafio do ciclo (em 1 frase):** Preparar o ambiente de desenvolvimento com Git, GitHub e VS Code para a construção de um CRUD inspirado no sistema de upload de músicas ds.o Spotify, definindo as entidades e a estrutura inicial dos dados
+
+2. **O que implementei (commits / arquivos / links):** Iniciei a preparação do meu ambiente de desenvolvimento utilizando Git, GitHub e VS Code, tendo como objetivo construir um CRUD inspirado no sistema de upload de músicas do Spotify. Utilizei o repositório AlgoritimosUNDB para armazenar as atividades da disciplina e comecei a estruturar o projeto com arquivos Python (.py) e documentação em README.md. O histórico do GitHub apresenta o commit Add initial README with CRUD title, realizado em 06/08, que serve como evidência da documentação inicial. Configurei minha identidade no Git utilizando git config --global user.name e git config --global user.email e utilizei git remote add origin para estabelecer a conexão com o repositório remoto. Também preparei o VS Code com extensões para Python, Code Runner, tradução para português e o tema AMOLED Black Theme. A organização posterior das pastas e a implementação do cadastro de músicas fazem parte da continuidade do desenvolvimento, não sendo consideradas entregas concluídas neste ciclo.
+Repositório: https://github.com/SantX0/AlgoritimosUNDB
+
+3. **Objeto(s) de conhecimento mobilizado(s):** Conhecimentos prévios: Já conhecia o Git por utilizá-lo para clonar repositórios, principalmente quando instalava o Powercord no Discord Canary. Entendia o GitHub como uma plataforma de armazenamento de projetos, semelhante a um Google Drive mais avançado. Também conhecia o VS Code como editor de código, principalmente pelo terminal integrado, pelas extensões e pelas ferramentas de inteligência artificial. 
+Conhecimentos novos: Ampliei meus conhecimentos sobre controle de versões, utilizando comandos como git init, responsável por inicializar um repositório; git add ., que adiciona alterações à área de preparação; git status, que permite verificar o estado dos arquivos; e git commit, utilizado para registrar versões das alterações. Também conheci os comandos git log, que permite visualizar o histórico de commits do repositório, incluindo informações como autor, data e mensagem de cada commit, e git revert, que permite desfazer as alterações de um commit anterior por meio da criação de um novo commit, preservando o histórico do projeto. Na modelagem inicial do CRUD, comecei a planejar a organização dos dados, separando as informações em Música (nome, autores, produtores, duração e gênero), Arquivo (identificador, nome, formato e status) e Data/Hora de Lançamento (dia, mês, ano, hora e minuto).
+
+4. **Desvio ou erro encontrado + causa técnica:** Não encontrei erros significativos durante a instalação ou configuração das ferramentas. Minha principal dificuldade foi lembrar de executar git init ao criar uma nova pasta destinada a um projeto independente. Esse comando inicializa um repositório Git local, criando a estrutura necessária para o controle de versões. Sem essa inicialização, caso a pasta não esteja dentro de outro repositório, comandos como git status e git commit não conseguem operar normalmente sobre ela. Essa dificuldade me ajudou a compreender a importância de diferenciar a criação de uma pasta comum da inicialização de um repositório Git.
+
+5. **Decisão de ajuste + fonte:** Decidi organizar o projeto em uma pasta específica dentro do meu repositório AlgoritimosUNDB, separando os arquivos do CRUD das atividades da disciplina para facilitar a organização e a localização dos arquivos. Também escolhi desenvolver um CRUD inspirado no sistema de upload de músicas do Spotify, planejando inicialmente três entidades: Música, Arquivo e Data/Hora de Lançamento. Essa separação foi importante para identificar quais informações o sistema precisaria armazenar e ter uma base para o desenvolvimento nas próximas aulas. Além disso, optei por utilizar Git e GitHub para controlar as versões do projeto, acompanhar as alterações realizadas e possibilitar a recuperação de versões anteriores, caso alguma modificação apresentasse problemas.
+Fonte: Orientações do professor Rondineli nas aulas de Algoritmos e Programação, que incentivou a utilização do GitHub para armazenar as atividades, do VS Code para desenvolver os projetos e do terminal para praticar comandos de versionamento do git.
+
+6. **Feedback recebido e o que mudei:** Não recebi feedback individual específico sobre o CRUD neste ciclo. Entretanto, segui as orientações gerais do professor Rondineli, que destacou a importância da familiarização com Git, GitHub, VS Code e Python desde as primeiras aulas. Com base nessas orientações, organizei os arquivos em uma pasta específica, configurei as ferramentas necessárias e passei a utilizar o terminal para gerenciar o versionamento e o envio dos arquivos ao repositório.
+
+7. **Próximo passo:** Avançar na implementação do CRUD de upload de músicas, utilizando as entidades definidas neste ciclo para estruturar os dados e desenvolver as operações de cadastro, consulta, atualização e exclusão. Também pretendo aprofundar meus conhecimentos sobre comandos do Git, principalmente o gerenciamento de branches e a realização de commits pequenos e frequentes, mantendo um histórico organizado e rastreável das alterações do projeto.
 
 ## 🟢 CICLO 02 — 19/08 — Variáveis, tipos de dados e entrada/saída
 
@@ -251,13 +260,23 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 | _…_ | _…_ | _…_ |
 
 #### Registro do Ciclo 02 — 19/08
-1. **Desafio do ciclo (em 1 frase):** _…_
-2. **O que implementei (commits / arquivos / links):** _…_
-3. **Objeto(s) de conhecimento mobilizado(s):** _…_
-4. **Desvio ou erro encontrado + causa técnica:** _…_
-5. **Decisão de ajuste + fonte:** _…_
-6. **Feedback recebido e o que mudei:** _…_
-7. **Próximo passo:** _…_
+1. **Desafio do ciclo (em 1 frase):** Compreender a utilização de variáveis, tipos de dados e funções de entrada e saída em Python, para começar a aplicar esses conhecimentos na organização e no funcionamento do CRUD de upload de músicas inspirado no Spotify.
+
+2. **O que implementei (commits / arquivos / links):** Durante a aula, pratiquei conceitos relacionados à declaração de variáveis, atribuição de valores e utilização de strings. Também tivemos contato com o operador lógico or, buscando compreender seu funcionamento em expressões Python. O professor Rondineli explicou como combinar atribuições de variáveis com entradas dinâmicas por meio de input(), além da conversão de tipos de dados. Como atividade de casa, desenvolvi e executei uma calculadora simples para praticar esses conhecimentos. O arquivo Calculadora1908PA.py está registrado no meu repositório GitHub. O histórico apresentado contém uma alteração descrita como a retirada de uma função e a mudança dos nomes das variáveis a, b e c, relacionada à organização e à legibilidade do código. Essa atividade me permitiu praticar os conceitos trabalhados na aula e perceber a importância de utilizar nomes de variáveis que facilitem a compreensão do programa.
+Repositório: https://github.com/SantX0/AlgoritimosUNDB
+
+3. **Objeto(s) de conhecimento mobilizado(s):** Os principais objetos de conhecimento foram variáveis, atribuição de valores, tipos de dados, entrada e saída de dados e conversão de tipos. Aprendi a utilizar str para representar textos, int para números inteiros, float para números decimais e bool para valores lógicos. Também aprofundei meus conhecimentos sobre input(), utilizado para receber informações do usuário, e print(), responsável por apresentar informações na saída do programa. Outro conceito trabalhado foi a conversão de tipos, principalmente com float(), necessária quando uma entrada recebida como string precisa ser utilizada em operações aritméticas.
+
+4. **Desvio ou erro encontrado + causa técnica:** Encontrei duas dificuldades relacionadas à entrada e à conversão de dados.
+A primeira foi o TypeError, que acontecia quando eu esquecia de converter o valor recebido pelo input() antes de realizar uma operação com números. Como o input() retorna uma string, tentar somar diretamente esse valor a um inteiro provocava um erro de incompatibilidade entre tipos. A segunda dificuldade foi o ValueError, que ocorria quando o programa tentava converter uma entrada textual, como "ola", para um tipo numérico utilizando int() ou float(). Essas situações demonstraram que receber um dado não significa que ele esteja automaticamente no tipo adequado para a operação desejada.
+
+5. **Decisão de ajuste + fonte:** Para resolver o TypeError, passei a utilizar a conversão explícita com float(input()) nas entradas destinadas a operações numéricas. Essa decisão permite transformar uma entrada textual válida em um valor numérico que pode ser utilizado em cálculos. Em relação ao ValueError, identifiquei que a conversão com float() ou int() depende de o usuário fornecer um valor compatível com o tipo esperado. Por isso, percebi que ainda precisava aprofundar meus conhecimentos sobre validação de entradas para evitar problemas durante a execução do programa. Essas decisões estão relacionadas aos conceitos de conversão de tipos e compatibilidade entre valores utilizados em operações aritméticas.
+
+Fonte: Pense em Python, seção 3.1 e Apêndice A.2, conforme as referências que utilizei para estudar os conceitos apresentados, além das orientações do professor Rondineli durante a aula.
+
+6. **Feedback recebido e o que mudei:** Durante a aula, o professor Rondineli explicou a utilização dos tipos de dados e das funções input() e print(), demonstrando como receber informações e trabalhar com elas no programa. Essas orientações contribuíram para minha compreensão da necessidade de converter os valores recebidos antes de utilizá-los em operações numéricas. Também passei a prestar mais atenção à escolha dos nomes das variáveis, buscando melhorar a legibilidade do código. Não recebi feedback individual específico sobre o CRUD neste ciclo.
+
+7. **Próximo passo:** Aprofundar meus conhecimentos sobre operadores de comparação e estruturas condicionais, para compreender como controlar o fluxo de execução do programa de acordo com diferentes situações e escolhas do usuário. Pretendo utilizar esses conhecimentos futuramente no CRUD, principalmente para permitir a seleção de operações e verificar condições relacionadas às informações cadastradas.
 
 ## 🟢 CICLO 03 — 26/08 — Operadores, fluxogramas e paradigmas
 
