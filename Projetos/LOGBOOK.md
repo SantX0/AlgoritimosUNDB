@@ -164,7 +164,7 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 
 **Checklist do Grupo 1**
 - [x] Identificação preenchida (app-base, link do repositório, dupla de revisão)
-- [ ] Campo 01: 3 objetos de conhecimento, 3 lacunas, hipótese de até 5 linhas
+- [x] Campo 01: 3 objetos de conhecimento, 3 lacunas, hipótese de até 5 linhas
 - [ ] Registros dos Ciclos 01, 02, 03 e 04 com os 7 itens
 - [ ] Campo 02: 2 referências com contribuição, hipótese revisada, 3 recursos
 - [ ] Commits no GitHub e painel atualizado
@@ -213,19 +213,19 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 *Grupo 1 | Prazo segunda 16/11, 23h59 | SEM CONSULTA*
 
 **1a. Objetos de conhecimento identificados (mínimo 3, com vocabulário técnico):**
-1. _…_
-2. _…_
-3. _…_
-4. _…_ *(opcional)*
+1. Entendia que as variáveis era um espaço na memoria aonde conseguíamos armazenar os dados exemplo: oi = 'ola mundo.
+2. Domínio conceitual sobre representações de cadeias de caracteres (str), inteiros (int), números de ponto flutuante (float) e valores lógicos (bool).
+3. Utilização da função input() para leitura de fluxo de entrada padrão (stdin) e print() para escrita na saída padrão (stdout).
+4. Mapeamento estrutural de entidades de domínio e definição de seus respectivos tipos de dados.
 
 **1b. Lacunas — o que não sei e preciso descobrir (mínimo 3, com precisão técnica):**
-1. _…_
-2. _…_
-3. _…_
+1. Implementação de blocos de controle de exceção (try-except) ou métodos de verificação de string para mitigar falhas de tempo de execução (ValueError) na conversão explícita de str para int.
+2. Compreensão dos tipos e bibliotecas nativas (como o módulo datetime) para armazenamento e formatação de datas e horas, corrigindo o equívoco conceitual de tipar strings formatadas (DD/MM/AAAA e HH:MM) como inteiros.
+3.Transposição da abstração teórica e do mapeamento de dados para a escrita, depuração e execução de código-fonte funcional em Python.
 
 **1c. Hipótese inicial em até 5 linhas — com lógica da área de formação:**
 
-> _…_
+> Ainda preciso aprender a armazenar varias músicas, validar entradas incorretas e controlar as opções escolhidas pelo o usuários, mas usando os conhecimento de receber, armazenar e apresentar os valores utilizando variáveis através do input() e print()
 
 ### 🧩 CAMPO 02 — Aprofundamento pós-aula
 *AV Qualis — Grupo 1 | Segunda 16/11, 23h59*
