@@ -107,7 +107,7 @@ Atualize a cada commit (troque ⬜ por ✅).
 | Grupo | Item | Prazo | Preenchido | Commit |
 |:--:|---|---|:--:|:--:|
 | 1 | Identificação | 16/11 | ✅ | ✅ |
-| 1 | Registros dos Ciclos 01, 02, 03 e 04 | 16/11 | ⬜ | ⬜ |
+| 1 | Registros dos Ciclos 01, 02, 03 e 04 | 16/11 | ✅ | ✅ |
 | 1 | Campo 01 — Instrumento de entrada | 16/11 | ✅ | ✅ |
 | 1 | Campo 02 — Aprofundamento | 16/11 | ⬜ | ⬜ |
 | 2 | Registros dos Ciclos 05, 06, 07 e 08 | 21/11 | ⬜ | ⬜ |
@@ -165,7 +165,7 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 **Checklist do Grupo 1**
 - [x] Identificação preenchida (app-base, link do repositório, dupla de revisão)
 - [x] Campo 01: 3 objetos de conhecimento, 3 lacunas, hipótese de até 5 linhas
-- [ ] Registros dos Ciclos 01, 02, 03 e 04 com os 7 itens
+- [x] Registros dos Ciclos 01, 02, 03 e 04 com os 7 itens
 - [ ] Campo 02: 2 referências com contribuição, hipótese revisada, 3 recursos
 - [ ] Commits no GitHub e painel atualizado
 
@@ -289,13 +289,23 @@ Fonte: Pense em Python, seção 3.1 e Apêndice A.2, conforme as referências qu
 </details>
 
 #### Registro do Ciclo 03 — 26/08
-1. **Desafio do ciclo (em 1 frase):** _…_
-2. **O que implementei (commits / arquivos / links):** _…_
-3. **Objeto(s) de conhecimento mobilizado(s):** _…_
-4. **Desvio ou erro encontrado + causa técnica:** _…_
-5. **Decisão de ajuste + fonte:** _…_
-6. **Feedback recebido e o que mudei:** _…_
-7. **Próximo passo:** _…_
+1. **Desafio do ciclo (em 1 frase):** Compreender a utilização dos operadores aritméticos, de comparação e lógicos em Python, além de aprender a representar o fluxo de execução de um programa por meio de fluxogramas, visando aplicar esses conhecimentos no desenvolvimento do CRUD de músicas.
+
+2. **O que implementei (commits / arquivos / links):** Durante a aula, o professor Rondineli propôs uma atividade de cálculo de médias utilizando operadores e comparações entre valores, que consegui desenvolver e executar. O programa está identificado no arquivo CalcularMedias2608.py, presente no meu repositório GitHub. Também solicitou a elaboração de um fluxograma no caderno para representar como o nosso sistema CRUD funcionaria. Comecei a desenvolver esse fluxograma, utilizando os símbolos apresentados durante a aula, mas não consegui concluí-lo naquele momento. Na construção do fluxograma, utilizei o oval para indicar o início e o fim do fluxo, o retângulo para representar ações ou processamentos, as setas para indicar a direção e a conexão entre as etapas e o losango para representar pontos de decisão. Além disso, pratiquei a construção de fluxogramas em casa, refazendo representações e criando outros exemplos relacionados a situações do cotidiano, buscando compreender melhor como organizar as etapas de um algoritmo.
+Neste ciclo, concluí a atividade de cálculo de médias, enquanto o fluxograma do CRUD permaneceu em desenvolvimento.
+Repositório: https://github.com/SantX0/AlgoritimosUNDB
+
+3. **Objeto(s) de conhecimento mobilizado(s):** Os principais objetos de conhecimento foram operadores aritméticos, operadores de comparação, operadores lógicos e representação de algoritmos por fluxogramas. Utilizei operadores aritméticos como +, * e /, responsáveis por realizar operações matemáticas. Também trabalhei com os operadores de comparação > e <, utilizados para verificar relações entre valores. Outro conhecimento mobilizado foi a representação do fluxo de execução por meio de símbolos gráficos. Aprendi a identificar início e fim, processos, conexões e pontos de decisão, compreendendo como essas representações ajudam a visualizar a sequência de execução de um algoritmo antes de implementá-lo em código.
+
+4. **Desvio ou erro encontrado + causa técnica:** Encontrei duas dificuldades durante o aprendizado. A primeira foi compreender como utilizar corretamente o losango nos fluxogramas. Eu ainda tinha dúvidas sobre onde posicionar os pontos de decisão e como organizar as diferentes possibilidades de continuidade do fluxo, o que contribuiu para que eu não concluísse o fluxograma do CRUD durante a atividade. A segunda dificuldade foi diferenciar os operadores = e == em Python. Inicialmente, confundia suas finalidades, pois os dois utilizam o mesmo símbolo básico. Entretanto, = é utilizado para atribuir valores a variáveis, enquanto == verifica se dois valores são iguais. Essas dificuldades estavam relacionadas à compreensão da lógica de decisão e à diferenciação entre atribuição e comparação.
+
+5. **Decisão de ajuste + fonte:** Para compreender melhor a utilização do losango, decidi praticar em casa, refazendo fluxogramas e criando outros exemplos relacionados a problemas do cotidiano. Essa prática me ajudou a compreender melhor onde representar as decisões e como conectar os diferentes caminhos do fluxo. Para diferenciar = de ==, utilizei a explicação do professor Rondineli e criei uma associação mental: o sinal = serve para atribuir um valor, enquanto == é utilizado para comparar dois valores. Essas decisões estão relacionadas aos conceitos de representação de algoritmos, fluxo de execução, atribuição e operadores de comparação, pois compreender a função de cada símbolo e operador é necessário para estruturar corretamente a lógica do programa.
+Fonte: Orientações e explicações do professor Rondineli durante a aula de Algoritmos e Programação, além dos exercícios de fluxogramas que pratiquei em casa.
+
+6. **Feedback recebido e o que mudei:** Não recebi feedback individual específico sobre o CRUD neste ciclo, mas o professor Rondineli apresentou orientações gerais sobre operadores e representação de algoritmos.
+Durante a aula, explicou o operador aritmético %, utilizado para obter o resto de uma divisão, e a exponenciação com **. Também comentou sobre o paralelogramo nos fluxogramas, utilizado para representar operações de entrada e saída de dados. Essas explicações ampliaram meu conhecimento sobre os operadores disponíveis em Python e sobre os símbolos utilizados na construção de fluxogramas. A partir das orientações e da prática individual, passei a prestar mais atenção à diferença entre atribuição e comparação e à organização dos pontos de decisão nos fluxogramas.
+
+7. **Próximo passo:** Aprofundar meus conhecimentos sobre estruturas condicionais, buscando compreender o que são, como funcionam e de que maneira podem ser utilizadas junto aos operadores lógicos e de comparação. Pretendo aplicar esses conhecimentos futuramente no CRUD de upload de músicas para controlar diferentes situações, verificar condições e permitir que o programa execute operações de acordo com as escolhas do usuário.
 
 ## 🟢 CICLO 04 — 02/09 — Estruturas condicionais: `if`, `elif`, `else`
 
@@ -310,13 +320,20 @@ Fonte: Pense em Python, seção 3.1 e Apêndice A.2, conforme as referências qu
 </details>
 
 #### Registro do Ciclo 04 — 02/09
-1. **Desafio do ciclo (em 1 frase):** _…_
-2. **O que implementei (commits / arquivos / links):** _…_
-3. **Objeto(s) de conhecimento mobilizado(s):** _…_
-4. **Desvio ou erro encontrado + causa técnica:** _…_
-5. **Decisão de ajuste + fonte:** _…_
-6. **Feedback recebido e o que mudei:** _…_
-7. **Próximo passo:** _…_
+1. **Desafio do ciclo (em 1 frase):** Compreender o funcionamento das estruturas condicionais if, elif e else em Python, aprendendo a combiná-las com operadores de comparação para controlar diferentes situações durante a execução de um programa.
+
+2. **O que implementei (commits / arquivos / links):** Durante as atividades relacionadas ao ciclo, reutilizei o arquivo Identificador2608.py, desenvolvido anteriormente, realizando modificações para aplicar os conhecimentos sobre estruturas condicionais if, elif e else. Utilizei essas estruturas junto ao operador de comparação == para verificar determinadas condições e apresentar resultados de acordo com os valores analisados. Após as modificações, consegui executar o programa. Essa atividade me permitiu praticar a lógica de decisão em Python e compreender melhor como as estruturas condicionais controlam o fluxo de execução de um programa. O arquivo já existia antes deste ciclo, sendo utilizado novamente para aprofundar meus conhecimentos. Essas alterações ainda não representavam a implementação das estruturas condicionais no CRUD de upload de músicas.
+Repositório: https://github.com/SantX0/AlgoritimosUNDB
+
+3. **Objeto(s) de conhecimento mobilizado(s):** Os principais objetos de conhecimento foram estruturas condicionais, operadores de comparação, expressões booleanas e indentação de blocos de código. Aprendi que if executa um bloco quando uma condição é verdadeira, elif permite verificar condições alternativas e else executa um bloco quando nenhuma das condições anteriores é atendida. Também compreendi como combinar operadores de comparação, como == e !=, com estruturas condicionais para construir expressões que resultam em True ou False. Outro conhecimento importante foi a indentação, responsável por delimitar os blocos de código em Python e indicar quais instruções pertencem a cada estrutura condicional.
+
+4. **Desvio ou erro encontrado + causa técnica:** Minha principal dificuldade foi organizar corretamente a indentação dos blocos condicionais. Em algumas situações, acabava deixando o print() sem o recuo necessário após uma estrutura if, provocando um IndentationError. Esse erro acontecia porque Python utiliza a indentação para identificar quais instruções pertencem a um bloco. Quando um if termina com dois-pontos, o interpretador espera que o corpo da estrutura esteja corretamente indentado. Essa dificuldade mostrou que a organização dos blocos não é apenas uma questão visual, mas também uma exigência da sintaxe da linguagem.
+5. **Decisão de ajuste + fonte:** Para corrigir os problemas de indentação, decidi praticar a construção de estruturas if, elif e else, criando o hábito de utilizar a tecla Tab após iniciar um bloco condicional e verificar se as instruções estavam alinhadas corretamente. Essa prática me ajudou a compreender melhor a organização dos blocos e a evitar erros causados pela ausência de recuo. A decisão está relacionada aos conceitos de indentação, sintaxe e controle de fluxo, pois a estrutura correta do código é necessária para que o interpretador consiga identificar e executar as instruções pertencentes a cada condição.
+Fonte: Orientações do professor Rondineli durante as aulas de Algoritmos e Programação, principalmente sobre a importância da indentação, da organização dos blocos e das boas práticas na escrita de estruturas condicionais.
+
+6. **Feedback recebido e o que mudei:** Não relatei feedback individual específico sobre meu código neste ciclo, mas o professor Rondineli apresentou orientações gerais sobre a importância de manter os blocos condicionais organizados e corretamente indentados. A partir dessas explicações, passei a prestar mais atenção ao alinhamento das instruções dentro de if, elif e else, buscando evitar erros de sintaxe e melhorar a organização do código.
+
+7. **Próximo passo:** Pensar em maneiras de aplicar as estruturas condicionais no CRUD de upload de músicas, combinando if, elif e else com operadores de comparação para controlar diferentes situações e escolhas do usuário. Naquele momento, ainda não imaginava utilizar condicionais aninhadas no projeto, pois meu foco estava em compreender e aplicar corretamente a lógica condicional básica.
 
 ---
 
