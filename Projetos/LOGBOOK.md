@@ -109,7 +109,7 @@ Atualize a cada commit (troque ⬜ por ✅).
 | 1 | Identificação | 16/11 | ✅ | ✅ |
 | 1 | Registros dos Ciclos 01, 02, 03 e 04 | 16/11 | ✅ | ✅ |
 | 1 | Campo 01 — Instrumento de entrada | 16/11 | ✅ | ✅ |
-| 1 | Campo 02 — Aprofundamento | 16/11 | ⬜ | ⬜ |
+| 1 | Campo 02 — Aprofundamento | 16/11 | ✅ | ✅ |
 | 2 | Registros dos Ciclos 05, 06, 07 e 08 | 21/11 | ⬜ | ⬜ |
 | 2 | Checkpoint Conceitual | 21/11 | ⬜ | ⬜ |
 | 2 | Campo 03 — Execução e desvios | 21/11 | ⬜ | ⬜ |
@@ -166,8 +166,8 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 - [x] Identificação preenchida (app-base, link do repositório, dupla de revisão)
 - [x] Campo 01: 3 objetos de conhecimento, 3 lacunas, hipótese de até 5 linhas
 - [x] Registros dos Ciclos 01, 02, 03 e 04 com os 7 itens
-- [ ] Campo 02: 2 referências com contribuição, hipótese revisada, 3 recursos
-- [ ] Commits no GitHub e painel atualizado
+- [x] Campo 02: 2 referências com contribuição, hipótese revisada, 3 recursos
+- [x] Commits no GitHub e painel atualizado
 
 ## 🟢 CICLO 01 — 12/08 — Preparação do laboratório e escolha do projeto
 
@@ -243,21 +243,22 @@ Fonte: Orientações do professor Rondineli nas aulas de Algoritmos e Programaç
 
 **2a. Aprofundamento dos objetos de conhecimento (mínimo 2 referências com síntese da contribuição para a solução):**
 
-- **Referência 1:** _…_ — **Contribuição:** _…_
-- **Referência 2:** _…_ — **Contribuição:** _…_
+- **Referência 1:** Pense em Python: Seção 3.1 e Apêndice A.2 - **Contribuição:** A leitura me ajudou a compreender melhor a diferença entre ValueError e TypeError. Entendi que o ValueError ocorre quando uma operação recebe um argumento do tipo esperado, mas com um valor inadequado, como tentar converter "abc" para inteiro utilizando int().
+Já o TypeError ocorre quando uma operação recebe um tipo de dado incompatível com o esperado, como tentar somar uma string diretamente a um número inteiro.
+- **Referência 2:** CS50x — Harvard, Módulo 6: Python — **Contribuição:** O curso me ajudou a compreender a utilização de f-strings (f"..."), que permitem inserir valores de variáveis diretamente em textos utilizando chaves.
 
 **2b. Hipótese revisada — o que mudou em relação ao Campo 01 e por quê:**
 
-> _…_
+> Mantive minha hipótese inicial de utilizar variáveis, input() e print() para começar o desenvolvimento do CRUD de músicas. Entretanto, após estudar as diferenças entre ValueError e TypeError, compreendi melhor a importância de validar as entradas fornecidas pelo usuário. Também aprendi a utilizar f-strings para apresentar informações de forma mais organizada. Ainda preciso aprofundar meus conhecimentos sobre como armazenar várias músicas e controlar as opções escolhidas pelo usuário.
 
 **2c. Dimensionamento inicial de recursos (recurso, quantidade estimada, justificativa técnica — mínimo 3 itens):**
 
 | RECURSO / MATERIAL / INSUMO | QUANTIDADE ESTIMADA | JUSTIFICATIVA TÉCNICA |
 |---|---|---|
-| _…_ | _…_ | _…_ |
-| _…_ | _…_ | _…_ |
-| _…_ | _…_ | _…_ |
-| _…_ | _…_ | _…_ |
+| Livro Pense em Python | 1 livro | Consultar conceitos de programação para compreender e desenvolver as funcionalidades do CRUD. |
+| Arquivo Python (.py) | 1 arquivo | Centralizar inicialmente as operações de cadastro, consulta, atualização e exclusão, facilitando a organização e o acompanhamento do código. |
+| Registros de músicas para teste | 5 registros | Utilizar dados de exemplo para verificar o funcionamento das operações de cadastro, consulta, atualização e exclusão. |
+| Casos de teste | 8 testes | Verificar entradas válidas, inválidas e possíveis erros durante a execução das funcionalidades. |
 
 #### Registro do Ciclo 02 — 19/08
 1. **Desafio do ciclo (em 1 frase):** Compreender a utilização de variáveis, tipos de dados e funções de entrada e saída em Python, para começar a aplicar esses conhecimentos na organização e no funcionamento do CRUD de upload de músicas inspirado no Spotify.
