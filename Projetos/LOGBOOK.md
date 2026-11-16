@@ -107,9 +107,9 @@ Atualize a cada commit (troque ⬜ por ✅).
 | Grupo | Item | Prazo | Preenchido | Commit |
 |:--:|---|---|:--:|:--:|
 | 1 | Identificação | 16/11 | ✅ | ✅ |
-| 1 | Registros dos Ciclos 01, 02, 03 e 04 | 16/11 | ⬜ | ⬜ |
-| 1 | Campo 01 — Instrumento de entrada | 16/11 | ⬜ | ⬜ |
-| 1 | Campo 02 — Aprofundamento | 16/11 | ⬜ | ⬜ |
+| 1 | Registros dos Ciclos 01, 02, 03 e 04 | 16/11 | ✅ | ✅ |
+| 1 | Campo 01 — Instrumento de entrada | 16/11 | ✅ | ✅ |
+| 1 | Campo 02 — Aprofundamento | 16/11 | ✅ | ✅ |
 | 2 | Registros dos Ciclos 05, 06, 07 e 08 | 21/11 | ⬜ | ⬜ |
 | 2 | Checkpoint Conceitual | 21/11 | ⬜ | ⬜ |
 | 2 | Campo 03 — Execução e desvios | 21/11 | ⬜ | ⬜ |
@@ -164,10 +164,10 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 
 **Checklist do Grupo 1**
 - [x] Identificação preenchida (app-base, link do repositório, dupla de revisão)
-- [ ] Campo 01: 3 objetos de conhecimento, 3 lacunas, hipótese de até 5 linhas
-- [ ] Registros dos Ciclos 01, 02, 03 e 04 com os 7 itens
-- [ ] Campo 02: 2 referências com contribuição, hipótese revisada, 3 recursos
-- [ ] Commits no GitHub e painel atualizado
+- [x] Campo 01: 3 objetos de conhecimento, 3 lacunas, hipótese de até 5 linhas
+- [x] Registros dos Ciclos 01, 02, 03 e 04 com os 7 itens
+- [x] Campo 02: 2 referências com contribuição, hipótese revisada, 3 recursos
+- [x] Commits no GitHub e painel atualizado
 
 ## 🟢 CICLO 01 — 12/08 — Preparação do laboratório e escolha do projeto
 
@@ -182,13 +182,22 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 </details>
 
 #### Registro do Ciclo 01 — 12/08
-1. **Desafio do ciclo (em 1 frase):** _…_
-2. **O que implementei (commits / arquivos / links):** _…_
-3. **Objeto(s) de conhecimento mobilizado(s):** _…_
-4. **Desvio ou erro encontrado + causa técnica:** _…_
-5. **Decisão de ajuste + fonte:** _…_
-6. **Feedback recebido e o que mudei:** _…_
-7. **Próximo passo:** _…_
+1. **Desafio do ciclo (em 1 frase):** Preparar o ambiente de desenvolvimento com Git, GitHub e VS Code para a construção de um CRUD inspirado no sistema de upload de músicas ds.o Spotify, definindo as entidades e a estrutura inicial dos dados
+
+2. **O que implementei (commits / arquivos / links):** Iniciei a preparação do meu ambiente de desenvolvimento utilizando Git, GitHub e VS Code, tendo como objetivo construir um CRUD inspirado no sistema de upload de músicas do Spotify. Utilizei o repositório AlgoritimosUNDB para armazenar as atividades da disciplina e comecei a estruturar o projeto com arquivos Python (.py) e documentação em README.md. O histórico do GitHub apresenta o commit Add initial README with CRUD title, realizado em 06/08, que serve como evidência da documentação inicial. Configurei minha identidade no Git utilizando git config --global user.name e git config --global user.email e utilizei git remote add origin para estabelecer a conexão com o repositório remoto. Também preparei o VS Code com extensões para Python, Code Runner, tradução para português e o tema AMOLED Black Theme. A organização posterior das pastas e a implementação do cadastro de músicas fazem parte da continuidade do desenvolvimento, não sendo consideradas entregas concluídas neste ciclo.
+Repositório: https://github.com/SantX0/AlgoritimosUNDB
+
+3. **Objeto(s) de conhecimento mobilizado(s):** Conhecimentos prévios: Já conhecia o Git por utilizá-lo para clonar repositórios, principalmente quando instalava o Powercord no Discord Canary. Entendia o GitHub como uma plataforma de armazenamento de projetos, semelhante a um Google Drive mais avançado. Também conhecia o VS Code como editor de código, principalmente pelo terminal integrado, pelas extensões e pelas ferramentas de inteligência artificial. 
+Conhecimentos novos: Ampliei meus conhecimentos sobre controle de versões, utilizando comandos como git init, responsável por inicializar um repositório; git add ., que adiciona alterações à área de preparação; git status, que permite verificar o estado dos arquivos; e git commit, utilizado para registrar versões das alterações. Também conheci os comandos git log, que permite visualizar o histórico de commits do repositório, incluindo informações como autor, data e mensagem de cada commit, e git revert, que permite desfazer as alterações de um commit anterior por meio da criação de um novo commit, preservando o histórico do projeto. Na modelagem inicial do CRUD, comecei a planejar a organização dos dados, separando as informações em Música (nome, autores, produtores, duração e gênero), Arquivo (identificador, nome, formato e status) e Data/Hora de Lançamento (dia, mês, ano, hora e minuto).
+
+4. **Desvio ou erro encontrado + causa técnica:** Não encontrei erros significativos durante a instalação ou configuração das ferramentas. Minha principal dificuldade foi lembrar de executar git init ao criar uma nova pasta destinada a um projeto independente. Esse comando inicializa um repositório Git local, criando a estrutura necessária para o controle de versões. Sem essa inicialização, caso a pasta não esteja dentro de outro repositório, comandos como git status e git commit não conseguem operar normalmente sobre ela. Essa dificuldade me ajudou a compreender a importância de diferenciar a criação de uma pasta comum da inicialização de um repositório Git.
+
+5. **Decisão de ajuste + fonte:** Decidi organizar o projeto em uma pasta específica dentro do meu repositório AlgoritimosUNDB, separando os arquivos do CRUD das atividades da disciplina para facilitar a organização e a localização dos arquivos. Também escolhi desenvolver um CRUD inspirado no sistema de upload de músicas do Spotify, planejando inicialmente três entidades: Música, Arquivo e Data/Hora de Lançamento. Essa separação foi importante para identificar quais informações o sistema precisaria armazenar e ter uma base para o desenvolvimento nas próximas aulas. Além disso, optei por utilizar Git e GitHub para controlar as versões do projeto, acompanhar as alterações realizadas e possibilitar a recuperação de versões anteriores, caso alguma modificação apresentasse problemas.
+Fonte: Orientações do professor Rondineli nas aulas de Algoritmos e Programação, que incentivou a utilização do GitHub para armazenar as atividades, do VS Code para desenvolver os projetos e do terminal para praticar comandos de versionamento do git.
+
+6. **Feedback recebido e o que mudei:** Não recebi feedback individual específico sobre o CRUD neste ciclo. Entretanto, segui as orientações gerais do professor Rondineli, que destacou a importância da familiarização com Git, GitHub, VS Code e Python desde as primeiras aulas. Com base nessas orientações, organizei os arquivos em uma pasta específica, configurei as ferramentas necessárias e passei a utilizar o terminal para gerenciar o versionamento e o envio dos arquivos ao repositório.
+
+7. **Próximo passo:** Avançar na implementação do CRUD de upload de músicas, utilizando as entidades definidas neste ciclo para estruturar os dados e desenvolver as operações de cadastro, consulta, atualização e exclusão. Também pretendo aprofundar meus conhecimentos sobre comandos do Git, principalmente o gerenciamento de branches e a realização de commits pequenos e frequentes, mantendo um histórico organizado e rastreável das alterações do projeto.
 
 ## 🟢 CICLO 02 — 19/08 — Variáveis, tipos de dados e entrada/saída
 
@@ -213,19 +222,19 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 *Grupo 1 | Prazo segunda 16/11, 23h59 | SEM CONSULTA*
 
 **1a. Objetos de conhecimento identificados (mínimo 3, com vocabulário técnico):**
-1. _…_
-2. _…_
-3. _…_
-4. _…_ *(opcional)*
+1. Entendia que as variáveis era um espaço na memoria aonde conseguíamos armazenar os dados exemplo: oi = 'ola mundo.
+2. Domínio conceitual sobre representações de cadeias de caracteres (str), inteiros (int), números de ponto flutuante (float) e valores lógicos (bool).
+3. Utilização da função input() para leitura de fluxo de entrada padrão (stdin) e print() para escrita na saída padrão (stdout).
+4. Mapeamento estrutural de entidades de domínio e definição de seus respectivos tipos de dados.
 
 **1b. Lacunas — o que não sei e preciso descobrir (mínimo 3, com precisão técnica):**
-1. _…_
-2. _…_
-3. _…_
+1. Implementação de blocos de controle de exceção (try-except) ou métodos de verificação de string para mitigar falhas de tempo de execução (ValueError) na conversão explícita de str para int.
+2. Compreensão dos tipos e bibliotecas nativas (como o módulo datetime) para armazenamento e formatação de datas e horas, corrigindo o equívoco conceitual de tipar strings formatadas (DD/MM/AAAA e HH:MM) como inteiros.
+3.Transposição da abstração teórica e do mapeamento de dados para a escrita, depuração e execução de código-fonte funcional em Python.
 
 **1c. Hipótese inicial em até 5 linhas — com lógica da área de formação:**
 
-> _…_
+> Ainda preciso aprender a armazenar varias músicas, validar entradas incorretas e controlar as opções escolhidas pelo o usuários, mas usando os conhecimento de receber, armazenar e apresentar os valores utilizando variáveis através do input() e print()
 
 ### 🧩 CAMPO 02 — Aprofundamento pós-aula
 *AV Qualis — Grupo 1 | Segunda 16/11, 23h59*
@@ -234,30 +243,41 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 
 **2a. Aprofundamento dos objetos de conhecimento (mínimo 2 referências com síntese da contribuição para a solução):**
 
-- **Referência 1:** _…_ — **Contribuição:** _…_
-- **Referência 2:** _…_ — **Contribuição:** _…_
+- **Referência 1:** Pense em Python: Seção 3.1 e Apêndice A.2 - **Contribuição:** A leitura me ajudou a compreender melhor a diferença entre ValueError e TypeError. Entendi que o ValueError ocorre quando uma operação recebe um argumento do tipo esperado, mas com um valor inadequado, como tentar converter "abc" para inteiro utilizando int().
+Já o TypeError ocorre quando uma operação recebe um tipo de dado incompatível com o esperado, como tentar somar uma string diretamente a um número inteiro.
+- **Referência 2:** CS50x — Harvard, Módulo 6: Python — **Contribuição:** O curso me ajudou a compreender a utilização de f-strings (f"..."), que permitem inserir valores de variáveis diretamente em textos utilizando chaves.
 
 **2b. Hipótese revisada — o que mudou em relação ao Campo 01 e por quê:**
 
-> _…_
+> Mantive minha hipótese inicial de utilizar variáveis, input() e print() para começar o desenvolvimento do CRUD de músicas. Entretanto, após estudar as diferenças entre ValueError e TypeError, compreendi melhor a importância de validar as entradas fornecidas pelo usuário. Também aprendi a utilizar f-strings para apresentar informações de forma mais organizada. Ainda preciso aprofundar meus conhecimentos sobre como armazenar várias músicas e controlar as opções escolhidas pelo usuário.
 
 **2c. Dimensionamento inicial de recursos (recurso, quantidade estimada, justificativa técnica — mínimo 3 itens):**
 
 | RECURSO / MATERIAL / INSUMO | QUANTIDADE ESTIMADA | JUSTIFICATIVA TÉCNICA |
 |---|---|---|
-| _…_ | _…_ | _…_ |
-| _…_ | _…_ | _…_ |
-| _…_ | _…_ | _…_ |
-| _…_ | _…_ | _…_ |
+| Livro Pense em Python | 1 livro | Consultar conceitos de programação para compreender e desenvolver as funcionalidades do CRUD. |
+| Arquivo Python (.py) | 1 arquivo | Centralizar inicialmente as operações de cadastro, consulta, atualização e exclusão, facilitando a organização e o acompanhamento do código. |
+| Registros de músicas para teste | 5 registros | Utilizar dados de exemplo para verificar o funcionamento das operações de cadastro, consulta, atualização e exclusão. |
+| Casos de teste | 8 testes | Verificar entradas válidas, inválidas e possíveis erros durante a execução das funcionalidades. |
 
 #### Registro do Ciclo 02 — 19/08
-1. **Desafio do ciclo (em 1 frase):** _…_
-2. **O que implementei (commits / arquivos / links):** _…_
-3. **Objeto(s) de conhecimento mobilizado(s):** _…_
-4. **Desvio ou erro encontrado + causa técnica:** _…_
-5. **Decisão de ajuste + fonte:** _…_
-6. **Feedback recebido e o que mudei:** _…_
-7. **Próximo passo:** _…_
+1. **Desafio do ciclo (em 1 frase):** Compreender a utilização de variáveis, tipos de dados e funções de entrada e saída em Python, para começar a aplicar esses conhecimentos na organização e no funcionamento do CRUD de upload de músicas inspirado no Spotify.
+
+2. **O que implementei (commits / arquivos / links):** Durante a aula, pratiquei conceitos relacionados à declaração de variáveis, atribuição de valores e utilização de strings. Também tivemos contato com o operador lógico or, buscando compreender seu funcionamento em expressões Python. O professor Rondineli explicou como combinar atribuições de variáveis com entradas dinâmicas por meio de input(), além da conversão de tipos de dados. Como atividade de casa, desenvolvi e executei uma calculadora simples para praticar esses conhecimentos. O arquivo Calculadora1908PA.py está registrado no meu repositório GitHub. O histórico apresentado contém uma alteração descrita como a retirada de uma função e a mudança dos nomes das variáveis a, b e c, relacionada à organização e à legibilidade do código. Essa atividade me permitiu praticar os conceitos trabalhados na aula e perceber a importância de utilizar nomes de variáveis que facilitem a compreensão do programa.
+Repositório: https://github.com/SantX0/AlgoritimosUNDB
+
+3. **Objeto(s) de conhecimento mobilizado(s):** Os principais objetos de conhecimento foram variáveis, atribuição de valores, tipos de dados, entrada e saída de dados e conversão de tipos. Aprendi a utilizar str para representar textos, int para números inteiros, float para números decimais e bool para valores lógicos. Também aprofundei meus conhecimentos sobre input(), utilizado para receber informações do usuário, e print(), responsável por apresentar informações na saída do programa. Outro conceito trabalhado foi a conversão de tipos, principalmente com float(), necessária quando uma entrada recebida como string precisa ser utilizada em operações aritméticas.
+
+4. **Desvio ou erro encontrado + causa técnica:** Encontrei duas dificuldades relacionadas à entrada e à conversão de dados.
+A primeira foi o TypeError, que acontecia quando eu esquecia de converter o valor recebido pelo input() antes de realizar uma operação com números. Como o input() retorna uma string, tentar somar diretamente esse valor a um inteiro provocava um erro de incompatibilidade entre tipos. A segunda dificuldade foi o ValueError, que ocorria quando o programa tentava converter uma entrada textual, como "ola", para um tipo numérico utilizando int() ou float(). Essas situações demonstraram que receber um dado não significa que ele esteja automaticamente no tipo adequado para a operação desejada.
+
+5. **Decisão de ajuste + fonte:** Para resolver o TypeError, passei a utilizar a conversão explícita com float(input()) nas entradas destinadas a operações numéricas. Essa decisão permite transformar uma entrada textual válida em um valor numérico que pode ser utilizado em cálculos. Em relação ao ValueError, identifiquei que a conversão com float() ou int() depende de o usuário fornecer um valor compatível com o tipo esperado. Por isso, percebi que ainda precisava aprofundar meus conhecimentos sobre validação de entradas para evitar problemas durante a execução do programa. Essas decisões estão relacionadas aos conceitos de conversão de tipos e compatibilidade entre valores utilizados em operações aritméticas.
+
+Fonte: Pense em Python, seção 3.1 e Apêndice A.2, conforme as referências que utilizei para estudar os conceitos apresentados, além das orientações do professor Rondineli durante a aula.
+
+6. **Feedback recebido e o que mudei:** Durante a aula, o professor Rondineli explicou a utilização dos tipos de dados e das funções input() e print(), demonstrando como receber informações e trabalhar com elas no programa. Essas orientações contribuíram para minha compreensão da necessidade de converter os valores recebidos antes de utilizá-los em operações numéricas. Também passei a prestar mais atenção à escolha dos nomes das variáveis, buscando melhorar a legibilidade do código. Não recebi feedback individual específico sobre o CRUD neste ciclo.
+
+7. **Próximo passo:** Aprofundar meus conhecimentos sobre operadores de comparação e estruturas condicionais, para compreender como controlar o fluxo de execução do programa de acordo com diferentes situações e escolhas do usuário. Pretendo utilizar esses conhecimentos futuramente no CRUD, principalmente para permitir a seleção de operações e verificar condições relacionadas às informações cadastradas.
 
 ## 🟢 CICLO 03 — 26/08 — Operadores, fluxogramas e paradigmas
 
@@ -270,13 +290,23 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 </details>
 
 #### Registro do Ciclo 03 — 26/08
-1. **Desafio do ciclo (em 1 frase):** _…_
-2. **O que implementei (commits / arquivos / links):** _…_
-3. **Objeto(s) de conhecimento mobilizado(s):** _…_
-4. **Desvio ou erro encontrado + causa técnica:** _…_
-5. **Decisão de ajuste + fonte:** _…_
-6. **Feedback recebido e o que mudei:** _…_
-7. **Próximo passo:** _…_
+1. **Desafio do ciclo (em 1 frase):** Compreender a utilização dos operadores aritméticos, de comparação e lógicos em Python, além de aprender a representar o fluxo de execução de um programa por meio de fluxogramas, visando aplicar esses conhecimentos no desenvolvimento do CRUD de músicas.
+
+2. **O que implementei (commits / arquivos / links):** Durante a aula, o professor Rondineli propôs uma atividade de cálculo de médias utilizando operadores e comparações entre valores, que consegui desenvolver e executar. O programa está identificado no arquivo CalcularMedias2608.py, presente no meu repositório GitHub. Também solicitou a elaboração de um fluxograma no caderno para representar como o nosso sistema CRUD funcionaria. Comecei a desenvolver esse fluxograma, utilizando os símbolos apresentados durante a aula, mas não consegui concluí-lo naquele momento. Na construção do fluxograma, utilizei o oval para indicar o início e o fim do fluxo, o retângulo para representar ações ou processamentos, as setas para indicar a direção e a conexão entre as etapas e o losango para representar pontos de decisão. Além disso, pratiquei a construção de fluxogramas em casa, refazendo representações e criando outros exemplos relacionados a situações do cotidiano, buscando compreender melhor como organizar as etapas de um algoritmo.
+Neste ciclo, concluí a atividade de cálculo de médias, enquanto o fluxograma do CRUD permaneceu em desenvolvimento.
+Repositório: https://github.com/SantX0/AlgoritimosUNDB
+
+3. **Objeto(s) de conhecimento mobilizado(s):** Os principais objetos de conhecimento foram operadores aritméticos, operadores de comparação, operadores lógicos e representação de algoritmos por fluxogramas. Utilizei operadores aritméticos como +, * e /, responsáveis por realizar operações matemáticas. Também trabalhei com os operadores de comparação > e <, utilizados para verificar relações entre valores. Outro conhecimento mobilizado foi a representação do fluxo de execução por meio de símbolos gráficos. Aprendi a identificar início e fim, processos, conexões e pontos de decisão, compreendendo como essas representações ajudam a visualizar a sequência de execução de um algoritmo antes de implementá-lo em código.
+
+4. **Desvio ou erro encontrado + causa técnica:** Encontrei duas dificuldades durante o aprendizado. A primeira foi compreender como utilizar corretamente o losango nos fluxogramas. Eu ainda tinha dúvidas sobre onde posicionar os pontos de decisão e como organizar as diferentes possibilidades de continuidade do fluxo, o que contribuiu para que eu não concluísse o fluxograma do CRUD durante a atividade. A segunda dificuldade foi diferenciar os operadores = e == em Python. Inicialmente, confundia suas finalidades, pois os dois utilizam o mesmo símbolo básico. Entretanto, = é utilizado para atribuir valores a variáveis, enquanto == verifica se dois valores são iguais. Essas dificuldades estavam relacionadas à compreensão da lógica de decisão e à diferenciação entre atribuição e comparação.
+
+5. **Decisão de ajuste + fonte:** Para compreender melhor a utilização do losango, decidi praticar em casa, refazendo fluxogramas e criando outros exemplos relacionados a problemas do cotidiano. Essa prática me ajudou a compreender melhor onde representar as decisões e como conectar os diferentes caminhos do fluxo. Para diferenciar = de ==, utilizei a explicação do professor Rondineli e criei uma associação mental: o sinal = serve para atribuir um valor, enquanto == é utilizado para comparar dois valores. Essas decisões estão relacionadas aos conceitos de representação de algoritmos, fluxo de execução, atribuição e operadores de comparação, pois compreender a função de cada símbolo e operador é necessário para estruturar corretamente a lógica do programa.
+Fonte: Orientações e explicações do professor Rondineli durante a aula de Algoritmos e Programação, além dos exercícios de fluxogramas que pratiquei em casa.
+
+6. **Feedback recebido e o que mudei:** Não recebi feedback individual específico sobre o CRUD neste ciclo, mas o professor Rondineli apresentou orientações gerais sobre operadores e representação de algoritmos.
+Durante a aula, explicou o operador aritmético %, utilizado para obter o resto de uma divisão, e a exponenciação com **. Também comentou sobre o paralelogramo nos fluxogramas, utilizado para representar operações de entrada e saída de dados. Essas explicações ampliaram meu conhecimento sobre os operadores disponíveis em Python e sobre os símbolos utilizados na construção de fluxogramas. A partir das orientações e da prática individual, passei a prestar mais atenção à diferença entre atribuição e comparação e à organização dos pontos de decisão nos fluxogramas.
+
+7. **Próximo passo:** Aprofundar meus conhecimentos sobre estruturas condicionais, buscando compreender o que são, como funcionam e de que maneira podem ser utilizadas junto aos operadores lógicos e de comparação. Pretendo aplicar esses conhecimentos futuramente no CRUD de upload de músicas para controlar diferentes situações, verificar condições e permitir que o programa execute operações de acordo com as escolhas do usuário.
 
 ## 🟢 CICLO 04 — 02/09 — Estruturas condicionais: `if`, `elif`, `else`
 
@@ -291,13 +321,20 @@ Cada ciclo tem sua própria seção abaixo, já com o modelo. Se precisar de esp
 </details>
 
 #### Registro do Ciclo 04 — 02/09
-1. **Desafio do ciclo (em 1 frase):** _…_
-2. **O que implementei (commits / arquivos / links):** _…_
-3. **Objeto(s) de conhecimento mobilizado(s):** _…_
-4. **Desvio ou erro encontrado + causa técnica:** _…_
-5. **Decisão de ajuste + fonte:** _…_
-6. **Feedback recebido e o que mudei:** _…_
-7. **Próximo passo:** _…_
+1. **Desafio do ciclo (em 1 frase):** Compreender o funcionamento das estruturas condicionais if, elif e else em Python, aprendendo a combiná-las com operadores de comparação para controlar diferentes situações durante a execução de um programa.
+
+2. **O que implementei (commits / arquivos / links):** Durante as atividades relacionadas ao ciclo, reutilizei o arquivo Identificador2608.py, desenvolvido anteriormente, realizando modificações para aplicar os conhecimentos sobre estruturas condicionais if, elif e else. Utilizei essas estruturas junto ao operador de comparação == para verificar determinadas condições e apresentar resultados de acordo com os valores analisados. Após as modificações, consegui executar o programa. Essa atividade me permitiu praticar a lógica de decisão em Python e compreender melhor como as estruturas condicionais controlam o fluxo de execução de um programa. O arquivo já existia antes deste ciclo, sendo utilizado novamente para aprofundar meus conhecimentos. Essas alterações ainda não representavam a implementação das estruturas condicionais no CRUD de upload de músicas.
+Repositório: https://github.com/SantX0/AlgoritimosUNDB
+
+3. **Objeto(s) de conhecimento mobilizado(s):** Os principais objetos de conhecimento foram estruturas condicionais, operadores de comparação, expressões booleanas e indentação de blocos de código. Aprendi que if executa um bloco quando uma condição é verdadeira, elif permite verificar condições alternativas e else executa um bloco quando nenhuma das condições anteriores é atendida. Também compreendi como combinar operadores de comparação, como == e !=, com estruturas condicionais para construir expressões que resultam em True ou False. Outro conhecimento importante foi a indentação, responsável por delimitar os blocos de código em Python e indicar quais instruções pertencem a cada estrutura condicional.
+
+4. **Desvio ou erro encontrado + causa técnica:** Minha principal dificuldade foi organizar corretamente a indentação dos blocos condicionais. Em algumas situações, acabava deixando o print() sem o recuo necessário após uma estrutura if, provocando um IndentationError. Esse erro acontecia porque Python utiliza a indentação para identificar quais instruções pertencem a um bloco. Quando um if termina com dois-pontos, o interpretador espera que o corpo da estrutura esteja corretamente indentado. Essa dificuldade mostrou que a organização dos blocos não é apenas uma questão visual, mas também uma exigência da sintaxe da linguagem.
+5. **Decisão de ajuste + fonte:** Para corrigir os problemas de indentação, decidi praticar a construção de estruturas if, elif e else, criando o hábito de utilizar a tecla Tab após iniciar um bloco condicional e verificar se as instruções estavam alinhadas corretamente. Essa prática me ajudou a compreender melhor a organização dos blocos e a evitar erros causados pela ausência de recuo. A decisão está relacionada aos conceitos de indentação, sintaxe e controle de fluxo, pois a estrutura correta do código é necessária para que o interpretador consiga identificar e executar as instruções pertencentes a cada condição.
+Fonte: Orientações do professor Rondineli durante as aulas de Algoritmos e Programação, principalmente sobre a importância da indentação, da organização dos blocos e das boas práticas na escrita de estruturas condicionais.
+
+6. **Feedback recebido e o que mudei:** Não relatei feedback individual específico sobre meu código neste ciclo, mas o professor Rondineli apresentou orientações gerais sobre a importância de manter os blocos condicionais organizados e corretamente indentados. A partir dessas explicações, passei a prestar mais atenção ao alinhamento das instruções dentro de if, elif e else, buscando evitar erros de sintaxe e melhorar a organização do código.
+
+7. **Próximo passo:** Pensar em maneiras de aplicar as estruturas condicionais no CRUD de upload de músicas, combinando if, elif e else com operadores de comparação para controlar diferentes situações e escolhas do usuário. Naquele momento, ainda não imaginava utilizar condicionais aninhadas no projeto, pois meu foco estava em compreender e aplicar corretamente a lógica condicional básica.
 
 ---
 
