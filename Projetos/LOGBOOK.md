@@ -346,8 +346,8 @@ Fonte: Orientações do professor Rondineli durante as aulas de Algoritmos e Pro
 
 **Checklist do Grupo 2**
 - [ ] Checkpoint Conceitual feito conforme orientação do professor (20 min, sem consulta)
-- [ ] Campo 03: 2 achados com objeto, 1 desvio com causa técnica, 1 decisão com fonte
-- [ ] Campo 04: ferramenta, pergunta íntegra, resumo, o que aceitei e o que questionei
+- [x] Campo 03: 2 achados com objeto, 1 desvio com causa técnica, 1 decisão com fonte
+- [x] Campo 04: ferramenta, pergunta íntegra, resumo, o que aceitei e o que questionei
 - [ ] Registros dos Ciclos 05, 06, 07 e 08 com os 7 itens (devolutiva da P1 no ciclo 06)
 - [ ] Commits no GitHub e painel atualizado
 
@@ -427,42 +427,50 @@ Fonte: Orientações do professor Rondineli durante as aulas de Algoritmos e Pro
 *AV Qualis — Grupo 2 | Sábado 21/11, 23h59*
 
 **3a. O que descobri que mudou minha compreensão do problema (mínimo 2 achados, com objeto de conhecimento associado):**
-1. _…_ — *Objeto de conhecimento:* _…_
-2. _…_ — *Objeto de conhecimento:* _…_
+1. Compreendi que as listas permitem armazenar vários elementos de maneira ordenada e dinâmica, possibilitando adicionar, acessar e remover registros. Esse conhecimento contribuiu para organizar as músicas cadastradas e trabalhar com múltiplos registros dentro do CRUD. — *Objeto de conhecimento:* Listas em Python
+2. Aprendi que os dicionários permitem associar chaves a valores, facilitando a organização e o acesso às informações de cada música. Esse conhecimento contribuiu para compreender como identificar e consultar atributos dos registros, como nome, autores, produtores e gênero. — *Objeto de conhecimento:* Dicionários em Python
 3. _…_ *(opcional)*
 
 **3b. Desvio em relação ao Campo 02 (ao menos 1 — causa técnica):**
-- **Desvio:** _…_
-- **Causa técnica:** _…_
+- **Desvio:** No Campo 02, planejei utilizar cinco registros de músicas e realizar oito testes para verificar o funcionamento do CRUD. Entretanto, durante a execução, decidi não criar os cinco registros inicialmente previstos, pois considerei essa quantidade desnecessária para as verificações que estava realizando. Mantive os oito testes, executados manualmente no VS Code.
+- **Causa técnica:** O desvio ocorreu porque considerei desnecessário cadastrar cinco músicas para verificar as funcionalidades do CRUD. Minha avaliação inicial foi de que poderia testar as operações utilizando uma quantidade menor de registros, sem considerar que isso reduziria a variedade de situações verificadas, principalmente nas operações de busca, atualização e exclusão com múltiplas músicas cadastradas.
 
 **3c. Decisão de ajuste (ao menos 1) com justificativa e fonte:**
-- **Decisão:** _…_
-- **Fonte:** _…_
+- **Decisão:** Uma das principais dificuldades que encontrei foi utilizar corretamente o comando break dentro dos laços while. Inicialmente, colocava o break em várias partes do programa, fazendo com que o menu fosse encerrado imediatamente após o cadastro de uma música. Para corrigir esse problema, ajustei a utilização do break, compreendendo que esse comando interrompe o laço em que está inserido e não deve ser utilizado indiscriminadamente após cada operação. Após essa correção, consegui manter o menu funcionando depois do cadastro, permitindo que o usuário continuasse utilizando o CRUD. Também compreendi que o break pode ser utilizado para interromper um laço de busca quando o resultado desejado é encontrado ou para encerrar o menu quando o usuário seleciona a opção de saída.
+Justificativa técnica: Ajustei o uso do comando break para evitar o encerramento antecipado do laço responsável pelo menu principal. Essa correção permitiu que o usuário continuasse executando diferentes operações do CRUD sem precisar reiniciar o programa após cada cadastro.
+- **Fonte:** Orientações do professor Rondineli durante a aula sobre laços de repetição e o livro Pense em Python, capítulo 7, seção 7.4, utilizados para aprofundar meus conhecimentos sobre o funcionamento dos laços de repetição e do comando break.
 
-**Objeto de conhecimento mobilizado nesta decisão:** _…_
+**Objeto de conhecimento mobilizado nesta decisão:** Laços de repetição while, comando break e controle do fluxo de execução.
 
 ### 🧩 CAMPO 04 — Interação com IA
 *AV Qualis — Grupo 2 | Sábado 21/11, 23h59 | OBRIGATÓRIO*
 
 > **Obrigatório e avaliado. Print sem análise crítica = devolução imediata. Reproduzir a IA sem questionamento = reprovado.**
 
-**4a. Ferramenta:** _…_  **Data:** _DD/MM/AAAA_
+**4a. Ferramenta:** Verdent, utilizando o modelo de inteligência artificial GPT, da OpenAI.  **Data:** 13/09/2026.
 
 **4b. Pergunta formulada (transcrita integralmente):**
 
-> _…_
+> O meu programa após completar alguma terminar alguma ação dos menus simplesmente fechava, como posso utilizar o break de forma correta para resolver este problema ? Responda sem codigo
 
 **4c. Resposta da IA (resumida em parágrafo):**
 
-> _…_
+> A IA orientou que, para impedir que o programa encerrasse após cada operação, seria necessário manter o menu principal dentro de um laço contínuo (while) e utilizar o comando break exclusivamente quando o usuário selecionasse a opção de sair.
+A orientação buscava permitir que o programa retornasse ao menu principal após a conclusão das operações, sem precisar ser executado novamente.
 
 **4d. O que aceitei — com referência ao objeto de conhecimento do componente:**
 
-> _…_
+> Aceitei a orientação de manter o menu principal dentro de um laço de repetição contínuo, pois compreendi que essa estrutura permitiria ao usuário realizar diferentes operações sem precisar reiniciar o programa.
+Também compreendi melhor que o comando break interrompe a execução do laço em que está inserido. Por isso, seu posicionamento precisa considerar qual repetição deve ser encerrada e em qual momento.
+Essa orientação contribuiu para minha compreensão dos conceitos de laços de repetição e controle do fluxo de execução.
 
 **4e. O que questionei ou descartei — com argumento técnico ou fonte:**
 
-> _…_
+> Questionei a orientação de utilizar o comando break exclusivamente na opção de sair.
+Entendi que essa afirmação era muito restritiva, pois o break também pode ser utilizado para interromper outros laços quando uma condição específica é atingida, como encerrar uma repetição de busca depois que o resultado desejado foi encontrado.
+O ponto técnico é que o break interrompe somente o laço mais interno em que está inserido. Portanto, sua utilização depende da organização dos laços e do comportamento esperado do programa.
+Assim, considerei adequada a recomendação para o menu principal, mas não a interpretação de que o comando deveria ser utilizado exclusivamente para encerrar o programa.
+Objeto de conhecimento: Laços de repetição while, estruturas condicionais e comando break. Fundamentação: Compreensão do funcionamento do comando break e de sua relação com o laço em que está inserido. Não consultei uma fonte externa adicional para verificar a resposta da IA nessa interação.
 
 ## 🟠 CICLO 05 — 09/09 — Condicionais aninhadas e operadores lógicos
 
