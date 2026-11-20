@@ -112,8 +112,8 @@ Atualize a cada commit (troque ⬜ por ✅).
 | 1 | Campo 02 — Aprofundamento | 16/11 | ✅ | ✅ |
 | 2 | Registros dos Ciclos 05, 06, 07 e 08 | 21/11 | ⬜ | ⬜ |
 | 2 | Checkpoint Conceitual | 21/11 | ⬜ | ⬜ |
-| 2 | Campo 03 — Execução e desvios | 21/11 | ⬜ | ⬜ |
-| 2 | Campo 04 — Interação com IA | 21/11 | ⬜ | ⬜ |
+| 2 | Campo 03 — Execução e desvios | 21/11 | ✅ | ✅ |
+| 2 | Campo 04 — Interação com IA | 21/11 | ✅ | ✅ |
 | 3 | Registros dos Ciclos 09, 10, 11 e 12 | 26/11 | ⬜ | ⬜ |
 | 3 | Campo 05 — Revisão por pares nº 1 e nº 2 | 26/11 | ⬜ | ⬜ |
 | 3 | Campo 06 — Próximos passos | 26/11 | ⬜ | ⬜ |
