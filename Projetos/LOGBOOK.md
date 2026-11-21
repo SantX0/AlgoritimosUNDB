@@ -485,13 +485,34 @@ Objeto de conhecimento: Laços de repetição while, estruturas condicionais e c
 </details>
 
 #### Registro do Ciclo 05 — 09/09
-1. **Desafio do ciclo (em 1 frase):** _…_
-2. **O que implementei (commits / arquivos / links):** _…_
-3. **Objeto(s) de conhecimento mobilizado(s):** _…_
-4. **Desvio ou erro encontrado + causa técnica:** _…_
-5. **Decisão de ajuste + fonte:** _…_
-6. **Feedback recebido e o que mudei:** _…_
-7. **Próximo passo:** _…_
+1. **Desafio do ciclo (em 1 frase):** Compreender como utilizar estruturas condicionais aninhadas em Python, aplicando um if dentro de outro if para realizar verificações mais específicas e utilizar essa lógica no desenvolvimento do CRUD de músicas.
+
+2. **O que implementei (commits / arquivos / links):** Durante este ciclo, trabalhei com estruturas condicionais aninhadas na funcionalidade de busca por ID do meu CRUD de upload de músicas inspirado no Spotify.
+Na implementação, utilizei condições para verificar a opção de busca selecionada pelo usuário e analisar o identificador informado, buscando localizar uma música entre os registros cadastrados.
+Na versão atual do código, essa funcionalidade utiliza isdigit() para verificar a entrada antes de convertê-la para int, além da variável posicao_encontrada, inicializada com -1, para controlar a localização do registro.
+Essa atividade me permitiu relacionar o conteúdo sobre condicionais aninhadas com uma funcionalidade do projeto.
+Repositório: https://github.com/SantX0/AlgoritimosUNDB
+
+3. **Objeto(s) de conhecimento mobilizado(s):** Os principais objetos de conhecimento foram estruturas condicionais aninhadas, operadores de comparação, operadores lógicos, validação de entradas e controle de fluxo.
+Compreendi que as condicionais aninhadas permitem realizar uma segunda verificação dentro de uma condição anterior, funcionando como uma sequência de verificações.
+Na busca por ID, esse conhecimento se relaciona à necessidade de verificar a opção escolhida pelo usuário e analisar se o identificador informado possui um formato adequado antes de realizar a busca.
+Também aprofundei minha compreensão sobre como a ordem das condições influencia o comportamento do programa. Os operadores lógicos and, or e not já eram conhecimentos com os quais eu tinha maior familiaridade, enquanto meu foco principal estava na organização das condicionais aninhadas.
+
+4. **Desvio ou erro encontrado + causa técnica:** Minha principal dificuldade foi organizar corretamente as estruturas condicionais aninhadas na funcionalidade de busca por ID do CRUD.
+Durante a implementação, o programa informava que a música não existia, mesmo quando ela já estava cadastrada. Esse comportamento demonstrava que a lógica de busca não estava identificando corretamente o registro procurado.
+A dificuldade estava relacionada à organização das verificações condicionais e ao controle de fluxo. Entretanto, não consegui identificar com precisão qual condição específica provocava o resultado incorreto na versão anterior do código.
+
+5. **Decisão de ajuste + fonte:** ara reduzir problemas nas condições aninhadas da busca por ID, procurei aplicar práticas de programação defensiva, utilizando verificações para tratar entradas inválidas e organizar melhor o fluxo de execução.
+Na versão atual do código, utilizei isdigit() para verificar se o identificador informado contém apenas dígitos antes de convertê-lo para int. Também defini o valor inicial de posicao_encontrada como -1 e utilizei um bloco else para continuar a operação quando a entrada atendesse à validação.
+Essa organização permite separar o tratamento de uma entrada inválida do caminho normal da busca. Entretanto, não consigo afirmar qual alteração específica corrigiu o problema de resultados incorretos que ocorreu anteriormente.
+Fonte: MCCONNELL, Steve. Code Complete. 2ª edição. Capítulo 8 — Defensive Programming, p. 196; capítulo 15 — Using Conditionals, p. 356.
+
+6. **Feedback recebido e o que mudei:** Não recebi feedback individual específico sobre o CRUD neste ciclo.
+Durante a aula, o professor Rondineli apresentou explicações gerais sobre estruturas condicionais aninhadas e lógica, contribuindo para minha compreensão de como organizar diferentes verificações dentro de um programa.
+A partir dessas explicações e da prática no projeto, passei a prestar mais atenção à organização das condições e à importância de verificar os valores recebidos antes de utilizá-los nas operações de busca.
+
+7. **Próximo passo:** Continuar praticando a utilização das estruturas condicionais aninhadas no CRUD, buscando compreender melhor como organizar as verificações necessárias para o funcionamento das buscas.
+Também pretendia aprofundar meus conhecimentos sobre laços de repetição while e for, para permitir a execução de diferentes operações no CRUD sem precisar reiniciar o programa após cada ação.
 
 ## 🟠 CICLO 06 — 30/09 — Devolutiva da P1 + repetição: `for`, `while`, `break`, `continue`
 
@@ -505,13 +526,36 @@ Objeto de conhecimento: Laços de repetição while, estruturas condicionais e c
 </details>
 
 #### Registro do Ciclo 06 — 30/09
-1. **Desafio do ciclo (em 1 frase):** _…_
-2. **O que implementei (commits / arquivos / links):** _…_
-3. **Objeto(s) de conhecimento mobilizado(s):** _…_
-4. **Desvio ou erro encontrado + causa técnica:** _…_
-5. **Decisão de ajuste + fonte:** _…_
-6. **Feedback recebido (inclui devolutiva da P1) e o que mudei:** _…_
-7. **Próximo passo:** _…_
+1. **Desafio do ciclo (em 1 frase):** Compreender o funcionamento dos laços de repetição while e for em Python, aprendendo a controlar repetições com o comando break para aplicar esses conhecimentos no desenvolvimento do CRUD de músicas.
+
+2. **O que implementei (commits / arquivos / links):** Durante as atividades relacionadas ao ciclo, trabalhei com laços de repetição no meu CRUD de upload de músicas inspirado no Spotify.
+Utilizei o while para solicitar novamente informações quando o usuário fornecia uma entrada inválida, permitindo que ele corrigisse os dados sem precisar reiniciar o programa.
+Também utilizei o for para percorrer as músicas cadastradas, possibilitando acessar os registros armazenados e trabalhar com suas informações.
+Essas aplicações contribuíram para compreender melhor como controlar a repetição de instruções e percorrer os dados do sistema.
+Repositório: https://github.com/SantX0/AlgoritimosUNDB
+
+3. **Objeto(s) de conhecimento mobilizado(s):** Os principais objetos de conhecimento foram laços de repetição while e for, comando break, condições de parada e controle de fluxo.
+Compreendi que o while executa repetidamente um bloco de código enquanto uma condição permanece verdadeira. Esse conhecimento foi importante para entender como solicitar novamente uma informação quando o usuário fornece uma entrada inválida.
+Também aprendi que o for permite percorrer os elementos de uma sequência, como uma lista de músicas cadastradas, executando instruções para cada elemento.
+Outro conhecimento mobilizado foi o comando break, utilizado para interromper um laço quando uma condição específica é atingida.
+
+4. **Desvio ou erro encontrado + causa técnica:** Minha principal dificuldade foi controlar corretamente os laços de repetição while durante a validação das entradas do usuário no CRUD.
+Em algumas situações, mesmo depois de digitar uma informação válida, o programa continuava repetindo a mesma pergunta, impedindo que a execução avançasse para a próxima etapa.
+
+Causa técnica: O problema estava relacionado ao controle da condição de parada do while True, pois esse laço continua executando até encontrar uma instrução que interrompa sua repetição. 
+
+5. **Decisão de ajuste + fonte:** Para lidar com os laços infinitos, aprofundei meus conhecimentos sobre o comando break e sua utilização dentro das estruturas while.
+Passei a utilizar o break quando a entrada fornecida pelo usuário atendia aos critérios esperados, permitindo que o programa encerrasse a repetição e avançasse para a próxima etapa.
+Essa decisão ajudou a controlar melhor os laços de validação, evitando que a mesma pergunta continuasse sendo apresentada mesmo após o usuário informar um valor válido.
+
+Fonte: Orientações do professor Rondineli durante a aula sobre laços de repetição e o livro Pense em Python, capítulo 7, seção 7.4, conforme a referência que consultei para aprofundar meus conhecimentos sobre repetição.
+
+6. **Feedback recebido (inclui devolutiva da P1) e o que mudei:** Neste ciclo, o professor Rondineli ainda não havia realizado a devolutiva formal da avaliação P1.
+Entretanto, durante as aulas, acompanhei as dúvidas apresentadas pelos colegas e as explicações fornecidas pelo professor, utilizando essas orientações gerais para compreender melhor os conteúdos trabalhados.
+Não recebi feedback individual específico sobre meu CRUD neste ciclo.
+
+7. **Próximo passo:** Continuar aplicando os laços while e for no CRUD, principalmente para solicitar novamente entradas inválidas e percorrer as músicas cadastradas.
+Também pretendia aprofundar meus conhecimentos sobre listas, pois já imaginava utilizá-las para armazenar várias músicas e acessar seus registros por meio de laços for.
 
 ## 🟠 CICLO 07 — 07/10 — Listas: armazenamento e iteração
 
@@ -525,13 +569,38 @@ Objeto de conhecimento: Laços de repetição while, estruturas condicionais e c
 </details>
 
 #### Registro do Ciclo 07 — 07/10
-1. **Desafio do ciclo (em 1 frase):** _…_
-2. **O que implementei (commits / arquivos / links):** _…_
-3. **Objeto(s) de conhecimento mobilizado(s):** _…_
-4. **Desvio ou erro encontrado + causa técnica:** _…_
-5. **Decisão de ajuste + fonte:** _…_
-6. **Feedback recebido e o que mudei:** _…_
-7. **Próximo passo:** _…_
+1. **Desafio do ciclo (em 1 frase):** Aprender a criar listas em Python, armazenar várias músicas e acessar seus elementos por meio de índices, aplicando esses conhecimentos no desenvolvimento do CRUD de músicas.
+
+2. **O que implementei (commits / arquivos / links):** Durante este ciclo, trabalhei com a utilização de listas no meu CRUD de upload de músicas inspirado no Spotify, principalmente na funcionalidade de listagem das músicas cadastradas.
+Implementei a listagem dos registros armazenados, utilizando estruturas de repetição para percorrer as músicas e apresentar suas informações.
+Para isso, utilizei o for musica in musicas para acessar diretamente cada música cadastrada e o for i in range(len(musicas)) quando precisava trabalhar com os índices da lista.
+Essa implementação me ajudou a compreender como armazenar e acessar vários registros dentro de uma mesma estrutura, dando continuidade ao que havia estudado sobre laços de repetição no Ciclo 06.
+
+Repositório: https://github.com/SantX0/AlgoritimosUNDB
+
+3. **Objeto(s) de conhecimento mobilizado(s):** Os principais objetos de conhecimento foram listas, índices, método append(), função len(), função range() e iteração com for.
+Compreendi que uma lista permite armazenar vários elementos em uma mesma estrutura e que seus índices representam as posições desses elementos, começando em 0.
+Também aprendi que o método append() adiciona um novo elemento ao final da lista e que a função len() retorna a quantidade de elementos armazenados.
+Outro conhecimento importante foi entender duas maneiras de percorrer uma lista: diretamente pelos elementos, utilizando for musica in musicas, ou pelas posições, utilizando for i in range(len(musicas)).
+
+4. **Desvio ou erro encontrado + causa técnica:** Minha principal dificuldade foi tentar acessar uma posição inexistente na lista de músicas, provocando o erro IndexError.
+Esse problema aconteceu porque eu tentava acessar um índice que ultrapassava os limites da lista.
+Compreendi que os índices começam em 0 e que, quando uma lista possui elementos, sua última posição válida corresponde a len(lista) - 1. Portanto, tentar acessar uma posição fora desse intervalo provoca um IndexError.
+Essa dificuldade mostrou que eu precisava compreender melhor a relação entre o tamanho da lista e os índices utilizados para acessar seus elementos.
+
+5. **Decisão de ajuste + fonte:** Para resolver minha dificuldade com o erro IndexError, aprofundei meus conhecimentos sobre os limites dos índices das listas em Python.
+A partir do estudo, passei a utilizar duas formas de percorrer as músicas cadastradas: for musica in musicas, para acessar diretamente cada registro, e for i in range(len(musicas)), quando precisava trabalhar com as posições da lista.
+Compreendi que os índices começam em 0 e terminam em len(lista) - 1. Por isso, percorrer diretamente os elementos ou utilizar range(len(musicas)) ajuda a evitar tentativas de acessar posições inexistentes.
+
+Fonte: DOWNEY, Allen B. Pense em Python: Pense como um cientista da computação. Capítulo 10 Seção 10.1, 10.2 e 10.13 — Listas.
+
+6. **Feedback recebido e o que mudei:** Neste ciclo, não recebi feedback individual específico sobre meu CRUD.
+Durante a aula, o professor Rondineli apresentou explicações gerais sobre listas e iteração, contribuindo para minha compreensão de como armazenar vários elementos e acessar suas posições.
+Com o conteúdo estudado e a prática no CRUD, passei a prestar mais atenção aos limites dos índices para evitar erros ao percorrer as músicas cadastradas.
+
+7. **Próximo passo:** Continuar desenvolvendo o CRUD utilizando listas e identificadores para organizar e localizar as músicas cadastradas.
+Meu objetivo era aplicar os conhecimentos sobre índices e iteração nas funcionalidades de busca, relacionando cada música ao seu ID.
+Naquele momento, não considerava necessário utilizar dicionários ou matrizes, pois pretendia continuar trabalhando com listas para organizar os registros do projeto.
 
 ## 🟠 CICLO 08 — 14/10 — Busca/consulta e introdução a dicionários e matrizes
 
