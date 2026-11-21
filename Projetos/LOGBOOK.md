@@ -110,7 +110,7 @@ Atualize a cada commit (troque ⬜ por ✅).
 | 1 | Registros dos Ciclos 01, 02, 03 e 04 | 16/11 | ✅ | ✅ |
 | 1 | Campo 01 — Instrumento de entrada | 16/11 | ✅ | ✅ |
 | 1 | Campo 02 — Aprofundamento | 16/11 | ✅ | ✅ |
-| 2 | Registros dos Ciclos 05, 06, 07 e 08 | 21/11 | ⬜ | ⬜ |
+| 2 | Registros dos Ciclos 05, 06, 07 e 08 | 21/11 | ✅ | ✅ |
 | 2 | Checkpoint Conceitual | 21/11 | ⬜ | ⬜ |
 | 2 | Campo 03 — Execução e desvios | 21/11 | ✅ | ✅ |
 | 2 | Campo 04 — Interação com IA | 21/11 | ✅ | ✅ |
@@ -348,8 +348,8 @@ Fonte: Orientações do professor Rondineli durante as aulas de Algoritmos e Pro
 - [ ] Checkpoint Conceitual feito conforme orientação do professor (20 min, sem consulta)
 - [x] Campo 03: 2 achados com objeto, 1 desvio com causa técnica, 1 decisão com fonte
 - [x] Campo 04: ferramenta, pergunta íntegra, resumo, o que aceitei e o que questionei
-- [ ] Registros dos Ciclos 05, 06, 07 e 08 com os 7 itens (devolutiva da P1 no ciclo 06)
-- [ ] Commits no GitHub e painel atualizado
+- [x] Registros dos Ciclos 05, 06, 07 e 08 com os 7 itens (devolutiva da P1 no ciclo 06)
+- [x] Commits no GitHub e painel atualizado
 
 ## 🟠 CICLO 03 (campos) — 26/08 — Checkpoint, Campo 03 e Campo 04
 
@@ -615,13 +615,37 @@ Naquele momento, não considerava necessário utilizar dicionários ou matrizes,
 </details>
 
 #### Registro do Ciclo 08 — 14/10
-1. **Desafio do ciclo (em 1 frase):** _…_
-2. **O que implementei (commits / arquivos / links):** _…_
-3. **Objeto(s) de conhecimento mobilizado(s):** _…_
-4. **Desvio ou erro encontrado + causa técnica:** _…_
-5. **Decisão de ajuste + fonte:** _…_
-6. **Feedback recebido e o que mudei:** _…_
-7. **Próximo passo:** _…_
+1. **Desafio do ciclo (em 1 frase):** Aprender a realizar buscas em listas utilizando índices e identificadores, compreender o funcionamento dos dicionários e conhecer os conceitos iniciais de matrizes para continuar desenvolvendo o CRUD de músicas.
+
+2. **O que implementei (commits / arquivos / links):** Durante este ciclo, trabalhei no desenvolvimento das funcionalidades de busca do meu CRUD de upload de músicas inspirado no Spotify.
+Utilizei listas, índices e identificadores para localizar os registros cadastrados, aplicando laços de repetição e estruturas condicionais para verificar se uma música correspondia ao critério procurado.
+Essa atividade deu continuidade ao Ciclo 07, no qual havia trabalhado com a listagem das músicas. Agora, meu objetivo era não apenas percorrer os registros, mas também localizar uma música específica.
+Repositório: https://github.com/SantX0/AlgoritimosUNDB
+
+3. **Objeto(s) de conhecimento mobilizado(s):** Os principais objetos de conhecimento foram listas, índices, identificadores (IDs), busca sequencial, laços for e estruturas condicionais if, elif e else.
+Compreendi que posso utilizar o for para percorrer os elementos de uma lista e aplicar condições para verificar se determinado registro corresponde à informação procurada.
+Também comecei a compreender melhor a diferença entre índices e identificadores. O índice representa a posição de um elemento na lista, enquanto o ID funciona como um código utilizado para identificar uma música cadastrada.
+Durante a aula, também estudei o funcionamento dos dicionários e tive uma introdução às matrizes. Entretanto, optei por continuar utilizando listas na implementação do CRUD.
+
+4. **Desvio ou erro encontrado + causa técnica:** Minha principal dificuldade foi diferenciar o ID de uma música da posição que ela ocupava na lista durante a implementação da funcionalidade de busca do CRUD.
+Ao tentar buscar uma música cadastrada, o programa acessava uma música diferente daquela que eu procurava. Isso aconteceu porque eu confundia o identificador do registro com o índice utilizado para acessar os elementos da lista.
+Causa técnica: O índice representa a posição de um elemento na lista, começando em 0, enquanto o ID é um identificador associado à música cadastrada. Como esses valores não representam necessariamente a mesma informação, utilizar o ID diretamente como índice pode levar ao acesso de um registro diferente do desejado.
+Essa dificuldade me ajudou a compreender que, para localizar uma música corretamente, precisava percorrer os registros e comparar o ID informado com o identificador armazenado em cada música, em vez de considerar que o ID correspondia à sua posição na lista.
+
+5. **Decisão de ajuste + fonte:** Para superar essa dificuldade, procurei compreender melhor a diferença entre os índices das listas e os identificadores das músicas cadastradas.
+Decidi continuar utilizando listas no CRUD, pois precisava de uma estrutura dinâmica, que permitisse adicionar registros e percorrê-los durante as operações do sistema.
+Também compreendi que a posição de uma música na lista não deve ser confundida com seu ID. Por isso, nas operações de busca, passei a percorrer os registros e comparar o identificador informado com o ID armazenado em cada música, sem depender exclusivamente de sua posição na lista.
+Mesmo tendo estudado dicionários, considerei que as listas eram suficientes para a estrutura que estava desenvolvendo naquele momento.
+
+Fonte: DOWNEY, Allen B. Pense em Python: Pense como um cientista da computação. Capítulo 10 — Listas; explicações do professor Rondineli durante a aula sobre buscas e estruturas de dados.
+
+6. **Feedback recebido e o que mudei:** Neste ciclo, não recebi feedback individual específico sobre meu CRUD.
+Durante a aula, o professor Rondineli apresentou explicações gerais sobre listas, buscas e dicionários, contribuindo para minha compreensão das diferentes formas de organizar e localizar dados.
+A partir do conteúdo estudado, passei a prestar mais atenção à diferença entre os índices e os IDs, principalmente ao desenvolver as funcionalidades de busca do CRUD.
+
+7. **Próximo passo:** Continuar aplicando listas e identificadores no CRUD, aprimorando a organização e a localização das músicas cadastradas.
+Também pretendia desenvolver as funcionalidades de atualização e exclusão, permitindo editar ou remover registros existentes.
+Para isso, precisava aprofundar meu entendimento sobre como localizar corretamente uma música pelo seu ID e acessar sua posição na lista antes de realizar alguma alteração.
 
 ---
 
