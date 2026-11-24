@@ -2,7 +2,6 @@
 
 ![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=flat&logo=python&logoColor=white)
 ![Interface](https://img.shields.io/badge/Interface-CLI-222222)
-![Status](https://img.shields.io/badge/Status-Em%20desenvolvimento-yellow)
 
 ## Sobre o projeto
 
