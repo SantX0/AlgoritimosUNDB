@@ -116,9 +116,9 @@ Atualize a cada commit (troque ⬜ por ✅).
 | 2 | Campo 04 — Interação com IA | 21/11 | ✅ | ✅ |
 | 3 | Registros dos Ciclos 09, 10, 11 e 12 | 26/11 | ✅ | ✅ |
 | 3 | Campo 05 — Revisão por pares nº 1 e nº 2 | 26/11 | ✅ | ✅ |
-| 3 | Campo 06 — Próximos passos | 26/11 | ⬜ | ⬜ |
-| 3 | Campo 07 — Evolução conceitual | 26/11 | ⬜ | ⬜ |
-| 🏁 | Defesa Técnica | 18/11 | ⬜ | — |
+| 3 | Campo 06 — Próximos passos | 26/11 | ✅ | ✅ |
+| 3 | Campo 07 — Evolução conceitual | 26/11 | ✅ | ✅ |
+| 🏁 | Defesa Técnica | 18/11 | ✅ | — |
 
 ---
 
@@ -998,30 +998,39 @@ Essas orientações contribuíram para melhorar as validações, a organização
 
 **7a. O que eu pensava no início do ciclo (com base no Campo 01 — registrar a hipótese inicial e os objetos de conhecimento que achava conhecer):**
 
-> _…_
+> No início do semestre, possuía conhecimentos básicos sobre variáveis, tipos de dados (str, int, float e bool), entrada e saída de dados com input() e print(), além de uma compreensão inicial sobre a modelagem das informações que seriam armazenadas no meu CRUD. Minha hipótese inicial era utilizar esses conhecimentos para receber, armazenar e apresentar os dados das músicas. Entretanto, ainda não sabia como armazenar vários registros, validar entradas incorretas e controlar as opções escolhidas pelo usuário.
+
+Também apresentava dificuldades relacionadas ao tratamento de exceções, à representação de datas e horas e à aplicação dos conhecimentos teóricos na construção de um programa funcional. Naquele momento, meu conhecimento era principalmente introdutório, e ainda precisava compreender como relacionar esses conceitos para desenvolver um CRUD completo.
 
 **7b. O que aprendi — conceitos, princípios ou relações técnicas que não dominava no início e que agora consigo explicar com precisão (mínimo 3 objetos de conhecimento):**
 
 | OBJETO DE CONHECIMENTO | O QUE EU NÃO DOMINAVA | O QUE APRENDI E CONSIGO DEMONSTRAR | EVIDÊNCIA (campo do Logbook onde aparece) |
 |---|---|---|---|
-| _…_ | _…_ | _…_ | _…_ |
-| _…_ | _…_ | _…_ | _…_ |
-| _…_ | _…_ | _…_ | _…_ |
+| Listas, dicionários e identificadores | Não sabia como armazenar vários registros, organizar seus atributos e diferenciar os IDs dos índices de uma lista. | Aprendi a armazenar vários registros em listas, organizar seus atributos utilizando dicionários e identificar cada música por um ID independente da sua posição. | Ciclos 07, 08, 09 e 12; Campos 03 e 06. |
+| Funções e modularização | Apresentava dificuldades na definição de funções, na passagem de parâmetros e argumentos e na utilização do return. | Aprendi a separar as funcionalidades do CRUD em funções com responsabilidades específicas, reutilizando instruções e melhorando a organização, a legibilidade e a manutenção do código. | Ciclos 10 e 12; Campo 06b. |
+| Persistência de dados com JSON | Não sabia como manter os registros cadastrados após o encerramento do programa. | Aprendi a utilizar o módulo json, utilizando json.dump() para salvar os dados em um arquivo e json.load() para recuperá-los em uma nova execução do programa. | Ciclo 12; commit 6375c87, de 24/11/2026. |
 
 **7c. Conceitos que precisei corrigir ao longo do ciclo — onde eu estava equivocado e o que o corrigiu (Fechamento Teórico, pesquisa, Peer Review, arguição):**
 
-1. **Equívoco:** _…_ — **Correção:** _…_
-   **O que corrigiu:** _…_
-2. **Equívoco:** _…_ — **Correção:** _…_
-   **O que corrigiu:** _…_
+1. **Equívoco:** Utilizava o break de maneira incorreta, fazendo com que o programa encerrasse o menu principal após a conclusão de determinadas operações. — **Correção:** Compreendi que o break encerra o laço de repetição mais interno em que está inserido. Dessa forma, aprendi a posicioná-lo corretamente para encerrar uma repetição específica sem comprometer a continuidade do menu principal.
+   **O que corrigiu:** As explicações durante as aulas, a interação com a inteligência artificial e a aplicação prática no meu CRUD.
+Evidência: Ciclo 06 e Campo 04.
+2. **Equívoco:** Confundia parâmetros com argumentos durante o estudo de funções, apresentando dificuldades para compreender como os valores eram recebidos e utilizados. — **Correção:** Compreendi que os parâmetros são definidos na declaração da função, enquanto os argumentos são os valores fornecidos durante sua chamada. Esse conhecimento contribuiu para a modularização das funcionalidades do meu CRUD.
+   **O que corrigiu:** O estudo da documentação oficial do Python sobre definição de funções e a aplicação desses conhecimentos durante a refatoração do UpSpot.
 
 **7d. Transferência — como este aprendizado se aplica a um contexto diferente do problema trabalhado (ao menos 1 exemplo concreto da área de formação):**
 
-> _…_
+> Os conhecimentos que adquiri durante o desenvolvimento do meu CRUD podem ser aplicados na criação de um sistema de gerenciamento financeiro. Nesse sistema, utilizaria listas de dicionários para armazenar transações financeiras, contendo informações como ID, descrição, valor, categoria e data.
+
+Utilizaria funções para separar as responsabilidades do código, como cadastrar despesas, consultar transações, calcular o saldo e gerar relatórios financeiros, facilitando a organização e a manutenção do sistema, também utilizaria o módulo json para armazenar os registros financeiros, permitindo recuperar os dados mesmo após o encerramento do programa.
+
+Dessa forma, conseguiria aplicar os conhecimentos sobre estruturas de dados, modularização e persistência em um contexto diferente do meu projeto original.
 
 **7e. Avaliação honesta do próprio percurso — o que ainda não domino e preciso aprofundar após este ciclo:**
 
-> _…_
+> Apesar de ter evoluído durante o semestre e conseguido modularizar as funcionalidades do meu CRUD, considero que ainda preciso aprofundar meus conhecimentos sobre funções. Pretendo melhorar minha capacidade de organizar o código, definir funções com responsabilidades específicas, utilizar parâmetros, argumentos e retornos de maneira mais eficiente e identificar oportunidades de reutilização de código.
+
+Meu objetivo é desenvolver programas cada vez mais organizados, legíveis e de fácil manutenção, reduzindo a repetição de instruções e evitando soluções desnecessariamente complexas, reconheço que evoluí em relação aos meus conhecimentos iniciais, mas ainda preciso praticar a modularização em outros projetos para consolidar meu aprendizado e desenvolver maior autonomia na programação.
 
 ---
 
@@ -1031,12 +1040,12 @@ Essas orientações contribuíram para melhorar as validações, a organização
 <summary>📘 Orientações para a Defesa Técnica e preparação</summary>
 
 **A Defesa é antes dos prazos dos Grupos 2 e 3.** Você será arguido sobre o que já estiver registrado e commitado. Priorize, até **terça 17/11**:
-- [ ] **Grupo 1 entregue** (prazo 16/11): Identificação, Registros 01 a 04, Campos 01 e 02.
-- [ ] **Campo 04 (IA)** e **Campo 03** ao menos em rascunho, para sustentar as perguntas sobre decisões (critérios 2 e 5).
-- [ ] **Campo 06c** (pergunta da banca e resposta) e **rascunho de 7a e 7b**, para sustentar a evolução conceitual (critério 3).
-- [ ] Registros dos Ciclos já feitos, mesmo que ainda não "entregues" no prazo do grupo.
-- [ ] `README.md`, `docs/` e CRUD rodando.
-- [ ] Você consegue explicar **cada linha** do seu código e **cada decisão** registrada.
+- [x] **Grupo 1 entregue** (prazo 16/11): Identificação, Registros 01 a 04, Campos 01 e 02.
+- [x] **Campo 04 (IA)** e **Campo 03** ao menos em rascunho, para sustentar as perguntas sobre decisões (critérios 2 e 5).
+- [x] **Campo 06c** (pergunta da banca e resposta) e **rascunho de 7a e 7b**, para sustentar a evolução conceitual (critério 3).
+- [x] Registros dos Ciclos já feitos, mesmo que ainda não "entregues" no prazo do grupo.
+- [x] `README.md`, `docs/` e CRUD rodando.
+- [x] Você consegue explicar **cada linha** do seu código e **cada decisão** registrada.
 - Os demais itens seguem com os prazos dos grupos (21/11 e 26/11). A banca pode consultar o histórico do Git.
 
 **A Defesa Técnica é individual.** Você será arguido sobre o que registrou. Cada aluno recebe pelo menos **1 questão** nos níveis de **Avaliação** ou **Criação** (taxonomia de Bloom).
@@ -1060,8 +1069,8 @@ Essas orientações contribuíram para melhorar as validações, a organização
 
 | | |
 |---|---|
-| **Nome** | _…_ |
-| **Curso / Time / Função** | _…_ |
+| **Nome** | Marcos Oliveira Ferreira |
+| **Curso / Time / Função** | Analise e Desenvolvimento de sistemas |
 
 <details>
 <summary>🔒 Uso do professor — rubrica completa</summary>
@@ -1087,10 +1096,16 @@ Essas orientações contribuíram para melhorar as validações, a organização
 </details>
 
 ### Registro do Encerramento — 18/11
-1. **O que apresentei/defendi (em 1 frase):** _…_
-2. **Objeto(s) de conhecimento que a banca mais explorou:** _…_
-3. **Pergunta que mais me desafiou e como respondi:** _…_
-4. **O que levo deste semestre para o próximo módulo:** _…_
+1. **O que apresentei/defendi (em 1 frase):** Apresentei meu processo de aprendizagem ao longo do semestre, destacando minhas dificuldades e minha evolução durante o desenvolvimento do CRUD.
+
+2. **Objeto(s) de conhecimento que a banca mais explorou:** Fluxogramas, principalmente a representação do fluxo de execução de um algoritmo, as estruturas de decisão e a definição das ações realizadas após uma condição.
+
+3. **Pergunta que mais me desafiou e como respondi:** O professor me perguntou por que eu apresentava dificuldades na etapa de decisão durante a elaboração de fluxogramas.
+
+Respondi que minha principal dificuldade ocorria após chegar a uma estrutura de decisão, pois não conseguia definir corretamente a continuidade do fluxo, ou seja, quais ações deveriam ser executadas dependendo do resultado da condição, como alterar um dado ou apresentar determinado resultado.
+4. **O que levo deste semestre para o próximo módulo:** Levo principalmente os conhecimentos sobre pensamento computacional e lógica de programação, que considero os pilares do conhecimento que construí ao longo deste semestre.
+
+Esses conhecimentos são fundamentais para compreender problemas, organizar meu raciocínio e desenvolver soluções por meio de algoritmos. Pretendo utilizá-los como base para aprofundar meus conhecimentos em programação e desenvolvimento de sistemas nos próximos módulos do curso.
 
 ---
 
