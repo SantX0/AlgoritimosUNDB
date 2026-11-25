@@ -1101,10 +1101,9 @@ Meu objetivo é desenvolver programas cada vez mais organizados, legíveis e de 
 2. **Objeto(s) de conhecimento que a banca mais explorou:** Fluxogramas, principalmente a representação do fluxo de execução de um algoritmo, as estruturas de decisão e a definição das ações realizadas após uma condição.
 
 3. **Pergunta que mais me desafiou e como respondi:** O professor me perguntou por que eu apresentava dificuldades na etapa de decisão durante a elaboração de fluxogramas.
-
 Respondi que minha principal dificuldade ocorria após chegar a uma estrutura de decisão, pois não conseguia definir corretamente a continuidade do fluxo, ou seja, quais ações deveriam ser executadas dependendo do resultado da condição, como alterar um dado ou apresentar determinado resultado.
-4. **O que levo deste semestre para o próximo módulo:** Levo principalmente os conhecimentos sobre pensamento computacional e lógica de programação, que considero os pilares do conhecimento que construí ao longo deste semestre.
 
+4. **O que levo deste semestre para o próximo módulo:** Levo principalmente os conhecimentos sobre pensamento computacional e lógica de programação, que considero os pilares do conhecimento que construí ao longo deste semestre.
 Esses conhecimentos são fundamentais para compreender problemas, organizar meu raciocínio e desenvolver soluções por meio de algoritmos. Pretendo utilizá-los como base para aprofundar meus conhecimentos em programação e desenvolvimento de sistemas nos próximos módulos do curso.
 
 ---
