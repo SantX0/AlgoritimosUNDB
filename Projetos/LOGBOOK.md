@@ -657,7 +657,7 @@ Para isso, precisava aprofundar meu entendimento sobre como localizar corretamen
 
 **Checklist do Grupo 3**
 - [x] Registros dos Ciclos 09, 10, 11 e 12 com os 7 itens
-- [ ] Campo 05: duas revisões (Ciclos 09 e 12), blocos 5a a 5e
+- [x] Campo 05: duas revisões (Ciclos 09 e 12), blocos 5a a 5e
 - [x] Campo 06: decisão autônoma, lacuna com plano, pergunta da banca com 5 linhas ou mais
 - [ ] Campo 07: 7a a 7e, com 3 objetos, 2 equívocos corrigidos e transferência
 - [ ] Coerência entre Campo 01 e Campo 07
@@ -950,46 +950,46 @@ Essas orientações contribuíram para melhorar as validações, a organização
 
 | | |
 |---|---|
-| **Autor do CRUD revisado** | _nome_ |
-| **Repositório revisado** | _link_ |
-| **Revisor** | _seu nome_ |
-| **Ciclo / data** | _Ciclo 12 · 11/11_ |
+| **Autor do CRUD revisado** | Davi Gael Lopes |
+| **Repositório revisado** | https://github.com/deuspato/PriVer |
+| **Revisor** | Marcos Oliveira Ferreira |
+| **Ciclo / data** | _Ciclo 12 · 24/11_ |
 
 **5a. AVANÇO DO PROCESSO DE REVISÃO:**
 
 | ETAPA DO PROCESSO | RESPONSÁVEL | PRAZO | STATUS | DESVIO / JUSTIFICATIVA |
 |---|---|---|---|---|
-| 1. _…_ | Revisor / Autor | _DD/MM_ | ☐ Concluída ☐ Em andamento ☐ Com desvio | _…_ |
-| 2. _…_ | Revisor / Autor | _DD/MM_ | ☐ Concluída ☐ Em andamento ☐ Com desvio | _…_ |
-| 3. _…_ | Revisor / Autor | _DD/MM_ | ☐ Concluída ☐ Em andamento ☐ Com desvio | _…_ |
-| 4. _…_ | Revisor / Autor | _DD/MM_ | ☐ Concluída ☐ Em andamento ☐ Com desvio | _…_ |
-| 5. _…_ | Revisor / Autor | _DD/MM_ | ☐ Concluída ☐ Em andamento ☐ Com desvio | _…_ |
+| 1. Receber a versão atualizada do CRUD. | Autor / Revisor | 24/11 | ☑ Concluída ☐ Em andamento ☐ Com desvio | O autor disponibilizou o código atualizado após a primeira revisão. |
+| 2. Comparar as alterações com a versão anterior. | Revisor | 24/11 | ☑ Concluída ☐ Em andamento ☐ Com desvio | Utilizei o ChatGPT como ferramenta de apoio para identificar as correções implementadas. |
+| 3. Analisar os casos de teste e as validações. | Revisor | 24/11 | ☑ Concluída ☐ Em andamento ☐ Com desvio | Revisão realizada com auxílio da IA, sem execução pessoal dos testes. |
+| 4. Registrar os problemas encontrados e as sugestões de melhoria. | Revisor | 24/11 | ☑ Concluída ☐ Em andamento ☐ Com desvio | Foram identificados problemas relacionados à manipulação de arquivos, tratamento de exceções e controle de versões. |
+| 5. Apresentar o feedback ao autor. | Revisor | 25/11 | ☑ Concluída ☐ Em andamento ☐ Com desvio | O feedback foi encaminhado antecipadamente, no dia 24/11. |
 
 **5b. ANÁLISE DE INSUMOS E CRITÉRIOS DE QUALIDADE:**
 
 | RECURSO | QTDE PLANEJADA | QTDE UTILIZADA | VARIAÇÃO | JUSTIFICATIVA TÉCNICA |
 |---|---|---|---|---|
-| _…_ | _…_ | _…_ | _…_ | _…_ |
-| _…_ | _…_ | _…_ | _…_ | _…_ |
-| _…_ | _…_ | _…_ | _…_ | _…_ |
+| Código-fonte atualizado (main.py) | 1 | 1 | 0 | Utilizado para identificar as correções implementadas e os problemas que permaneceram. |
+| ChatGPT | 1 | 1 | 0 | Utilizado como ferramenta de apoio à análise do código, identificação de falhas e elaboração do feedback técnico. |
+| Feedback da primeira revisão | 1 | 1 | 0 | Utilizado como referência para verificar se o autor aplicou as recomendações anteriores. |
 
 **5c. CONTROLE DE QUALIDADE:**
-- **Critério ou norma técnica:** _…_
-- **A solução atende?** ☐ Sim ☐ Parcialmente ☐ Não
+- **Critério ou norma técnica:** Funcionamento das operações do CRUD, validação de entradas, tratamento de exceções, integridade dos arquivos, consistência do controle de versões e atendimento às recomendações da primeira revisão.
+- **A solução atende?** ☐ Sim ☑ Parcialmente ☐ Não
 
 **5d. GESTÃO DE RISCOS:**
-- **Risco:** _…_
-- **Estratégia de mitigação:** _…_
+- **Risco:** Encerramento inesperado do programa ao receber caminhos inválidos, falhas durante a renomeação ou gravação de arquivos e sobrescrita de versões anteriores após o reset dos registros.
+- **Estratégia de mitigação:** Recomendei ao autor aprimorar a validação dos caminhos e nomes dos arquivos, ampliar o tratamento de exceções com try/except, verificar a existência dos arquivos de destino antes da gravação e atualizar os contadores de versões somente após a confirmação do salvamento.
 
 **5e. RASTREABILIDADE DAS DECISÕES TÉCNICAS — COM VÍNCULO AO CONTEÚDO:**
 
 | DATA | DECISÃO TÉCNICA | RESP. | OBJETO DE CONHECIMENTO MOBILIZADO | FUNDAMENTAÇÃO / REFERÊNCIA |
 |---|---|---|---|---|
-| _DD/MM/AA_ | _…_ | _…_ | _…_ | _…_ |
-| _DD/MM/AA_ | _…_ | _…_ | _…_ | _…_ |
-| _DD/MM/AA_ | _…_ | _…_ | _…_ | _…_ |
-| _DD/MM/AA_ | _…_ | _…_ | _…_ | _…_ |
-| _DD/MM/AA_ | _…_ | _…_ | _…_ | _…_ |
+| 24/11/26 | Recomendar a validação dos caminhos antes da abertura dos arquivos. | Revisor | Condicionais e validação de dados. | [Documentação Python — os.path.isfile().](https://docs.python.org/pt-br/3/library/os.path.html#os.path.isfile) |
+| 24/11/26 | Recomendar a validação dos nomes e o tratamento de exceções durante a renomeação dos arquivos. | Revisor | Validação de strings e tratamento de exceções. | [Documentação Python — os.rename().](https://docs.python.org/pt-br/3/library/os.html#os.rename) |
+| 24/11/26 | Recomendar a atualização dos contadores somente após o salvamento bem-sucedido.| Revisor | Operadores de atribuição, controle de fluxo e manipulação de arquivos. | [Documentação Python — Leitura e escrita de arquivos.](https://docs.python.org/pt-br/3/tutorial/inputoutput.html#reading-and-writing-files) |
+| 24/11/26 | Recomendar a verificação da existência do arquivo de destino para evitar a sobrescrita de versões anteriores. | Revisor | Estruturas condicionais e integridade de dados. | [Documentação Python — os.path.exists().](https://docs.python.org/pt-br/3/library/os.path.html#os.path.exists) |
+| 24/11/26 | Recomendar a continuidade da modularização das funcionalidades do CRUD. | Revisor | Funções, modularização, reutilização e manutenibilidade.| [Documentação Python — Definindo funções.](https://docs.python.org/pt-br/3/tutorial/controlflow.html#defining-functions) |
 
 ### 🧩 CAMPO 07 — Evolução conceitual
 *AV Qualis — Grupo 3 | Individual | Quinta 26/11, 23h59*
