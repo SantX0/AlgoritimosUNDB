@@ -114,7 +114,7 @@ Atualize a cada commit (troque ⬜ por ✅).
 | 2 | Checkpoint Conceitual | 21/11 | ⬜ | ⬜ |
 | 2 | Campo 03 — Execução e desvios | 21/11 | ✅ | ✅ |
 | 2 | Campo 04 — Interação com IA | 21/11 | ✅ | ✅ |
-| 3 | Registros dos Ciclos 09, 10, 11 e 12 | 26/11 | ⬜ | ⬜ |
+| 3 | Registros dos Ciclos 09, 10, 11 e 12 | 26/11 | ✅ | ✅ |
 | 3 | Campo 05 — Revisão por pares nº 1 e nº 2 | 26/11 | ⬜ | ⬜ |
 | 3 | Campo 06 — Próximos passos | 26/11 | ⬜ | ⬜ |
 | 3 | Campo 07 — Evolução conceitual | 26/11 | ⬜ | ⬜ |
@@ -656,7 +656,7 @@ Para isso, precisava aprofundar meu entendimento sobre como localizar corretamen
 > ⚠️ O prazo vem **um dia depois da P2 (25/11)**. Os Campos 06 e 07 dependem de todo o Logbook: deixe-os para o final, mas **adiante o rascunho do 6c e do 7a/7b antes da Defesa (18/11)**.
 
 **Checklist do Grupo 3**
-- [ ] Registros dos Ciclos 09, 10, 11 e 12 com os 7 itens
+- [x] Registros dos Ciclos 09, 10, 11 e 12 com os 7 itens
 - [ ] Campo 05: duas revisões (Ciclos 09 e 12), blocos 5a a 5e
 - [x] Campo 06: decisão autônoma, lacuna com plano, pergunta da banca com 5 linhas ou mais
 - [ ] Campo 07: 7a a 7e, com 3 objetos, 2 equívocos corrigidos e transferência
@@ -904,13 +904,47 @@ A utilização dos IDs facilita a localização das músicas, pois não preciso 
 </details>
 
 #### Registro do Ciclo 12 — 11/11
-1. **Desafio do ciclo (em 1 frase):** _…_
-2. **O que implementei (commits / arquivos / links):** _…_
-3. **Objeto(s) de conhecimento mobilizado(s):** _…_
-4. **Desvio ou erro encontrado + causa técnica:** _…_
-5. **Decisão de ajuste + fonte:** _…_
-6. **Feedback recebido e o que mudei:** _…_
-7. **Próximo passo:** _…_
+1. **Desafio do ciclo (em 1 frase):** Melhorar a organização do código, corrigir erros, reduzir instruções duplicadas, aprimorar as validações e modularizar as funcionalidades do CRUD.
+2. **O que implementei (commits / arquivos / links):** Realizei a refatoração do meu CRUD, o UpSpot, organizando o código em 21 funções com responsabilidades específicas, buscando reduzir a repetição de instruções e facilitar sua manutenção. Substituí a estrutura de listas de listas por uma lista de dicionários, permitindo identificar os atributos das músicas por meio de chaves descritivas.Utilizei os seguintes módulos da biblioteca padrão do Python:
+json: persistência dos dados cadastrados.
+calendar: validação de datas.
+collections: contagem de elementos nos relatórios.
+math: verificação de valores numéricos finitos.
+pathlib: manipulação dos caminhos de arquivos.
+tempfile: criação de arquivos temporários durante o salvamento dos dados.
+
+Também implementei o tratamento de exceções com try/except, funcionando como uma rede de proteção para capturar determinadas exceções e apresentar mensagens ao usuário. Além disso, aprimorei as validações de entrada com strip() e casefold() e corrigi a estrutura dos relatórios disponibilizados na opção 7 do menu.
+
+3. **Objeto(s) de conhecimento mobilizado(s):** 
+Refatoração: melhorar a estrutura interna do código sem alterar seu comportamento esperado.
+Legibilidade: facilitar a leitura e a compreensão do código.
+Reutilização de código: evitar a duplicação de instruções por meio de funções.
+Manutenibilidade: facilitar futuras correções e alterações no sistema.
+Validação de dados: impedir que entradas inválidas comprometam o funcionamento do programa.
+Modularização: dividir o código em funções com responsabilidades específicas.
+Tratamento de exceções: utilizar try/except para tratar determinadas exceções durante a execução.
+Persistência de dados: utilizar arquivos JSON para preservar os registros entre diferentes execuções do programa.
+Dicionários: organizar os atributos das músicas por meio de pares de chave e valor.
+
+4. **Desvio ou erro encontrado + causa técnica:** Os principais problemas que identifiquei foram a repetição de instruções e a dificuldade de manutenção do código.
+A estrutura anterior concentrava as funcionalidades do CRUD no fluxo principal do programa, dificultando a localização de determinadas instruções e a realização de alterações.
+Causa técnica: A ausência de modularização e a repetição de trechos de código dificultavam sua reutilização e manutenção. Dessa forma, determinadas alterações exigiam a revisão de diferentes partes do código, tornando o processo mais trabalhoso.
+
+5. **Decisão de ajuste + fonte:** Decidi criar funções com nomes descritivos que representassem tarefas específicas, centralizando a lógica de cada funcionalidade em um único ponto do código.
+Também busquei seguir padrões de estilo, nomenclatura clara e organização estrutural, priorizando a simplicidade e a legibilidade em vez de soluções desnecessariamente complexas.
+
+Fontes consultadas:
+Tutorial Oficial do Python — Definindo Funções: auxiliou na definição e utilização de funções para modularizar o código.
+PEP 8 — Style Guide for Python Code: serviu como referência para a padronização, nomenclatura e organização do código.
+PEP 20 — The Zen of Python: orientou a priorização da simplicidade, clareza e legibilidade do código.
+
+6. **Feedback recebido e o que mudei:** No dia 24/11/2026, recebi um feedback do meu colega Davi Gael Lopes, que identificou problemas relacionados ao funcionamento da opção 7 do menu e à diferenciação entre letras maiúsculas e minúsculas em determinadas entradas. A partir desse feedback, corrigi os problemas apontados, além de outras inconsistências relatadas durante a revisão. 
+
+Para corrigir os problemas de diferenciação entre letras maiúsculas e minúsculas, utilizei o método casefold(), permitindo realizar comparações independentemente da capitalização das entradas. Também reorganizei a lógica dos relatórios, implementando a função gerar_relatorio() e integrando-a à opção 7 do menu principal.
+
+Essas orientações contribuíram para melhorar as validações, a organização e o funcionamento do meu CRUD.
+
+7. **Próximo passo:** Considero que as alterações realizadas no último commit do projeto são suficientes para a entrega final do CRUD. Como próximo passo, pretendo realizar uma verificação final das funcionalidades e concluir a documentação do Logbook, registrando minha evolução conceitual e as decisões técnicas tomadas ao longo do semestre.
 
 ### 🧩 CAMPO 05 — Registro de Revisão por Pares (revisão nº 2)
 
