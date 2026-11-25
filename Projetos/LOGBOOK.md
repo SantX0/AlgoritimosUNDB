@@ -30,7 +30,7 @@
 | **App-base do meu CRUD** | Spotify |
 | **Link do meu repositório** | https://github.com/SantX0/AlgoritimosUNDB |
 | **Dupla de revisão (Campo 05)** | Davi Gael Lopes |
-| **Função neste ciclo** | _Autor do meu CRUD · Revisor do CRUD de um colega_ |
+| **Função neste ciclo** | Marcos Oliveira Ferreira · Davi Gael Lopes |
 
 ---
 
@@ -658,7 +658,7 @@ Para isso, precisava aprofundar meu entendimento sobre como localizar corretamen
 **Checklist do Grupo 3**
 - [ ] Registros dos Ciclos 09, 10, 11 e 12 com os 7 itens
 - [ ] Campo 05: duas revisões (Ciclos 09 e 12), blocos 5a a 5e
-- [ ] Campo 06: decisão autônoma, lacuna com plano, pergunta da banca com 5 linhas ou mais
+- [x] Campo 06: decisão autônoma, lacuna com plano, pergunta da banca com 5 linhas ou mais
 - [ ] Campo 07: 7a a 7e, com 3 objetos, 2 equívocos corrigidos e transferência
 - [ ] Coerência entre Campo 01 e Campo 07
 - [ ] Painel de acompanhamento completo
@@ -682,13 +682,37 @@ Para isso, precisava aprofundar meu entendimento sobre como localizar corretamen
 </details>
 
 #### Registro do Ciclo 09 — 21/10
-1. **Desafio do ciclo (em 1 frase):** _…_
-2. **O que implementei (commits / arquivos / links):** _…_
-3. **Objeto(s) de conhecimento mobilizado(s):** _…_
-4. **Desvio ou erro encontrado + causa técnica:** _…_
-5. **Decisão de ajuste + fonte:** _…_
-6. **Feedback recebido e o que mudei:** _…_
-7. **Próximo passo:** _…_
+1. **Desafio do ciclo (em 1 frase):** Aprender a atualizar as informações das músicas já cadastradas e excluir registros da lista, aplicando os conhecimentos sobre índices, identificadores e busca no CRUD.
+
+2. **O que implementei (commits / arquivos / links):** Durante este ciclo, implementei as funcionalidades de atualização e exclusão de músicas no meu CRUD.
+Na atualização, desenvolvi a possibilidade de o usuário escolher quais atributos de uma música cadastrada deseja modificar, sem precisar alterar todo o registro.
+Nas duas funcionalidades, utilizei a busca pelo ID para localizar a música antes de realizar qualquer alteração.
+Para a exclusão, utilizei o método pop() para remover o registro da lista, juntamente com uma confirmação do usuário para evitar exclusões acidentais.
+
+Repositório: https://github.com/SantX0/AlgoritimosUNDB
+
+3. **Objeto(s) de conhecimento mobilizado(s):** Os principais objetos de conhecimento foram listas, índices, atribuição de valores, método pop(), busca por ID e estruturas condicionais if e else.
+Compreendi que é possível atualizar um atributo de uma música acessando sua posição na lista e atribuindo um novo valor, sem precisar substituir todo o registro.
+Também aprendi que o método pop() remove um elemento de uma lista e retorna o valor removido, modificando a estrutura original.
+Utilizei a busca por ID para localizar corretamente a música cadastrada, evitando que o usuário modificasse ou excluísse um registro diferente do desejado.
+Além disso, utilizei as estruturas condicionais if e else para controlar a confirmação da exclusão, funcionando como uma medida de segurança para evitar que uma música fosse apagada acidentalmente.
+
+4. **Desvio ou erro encontrado + causa técnica:** Minha principal dificuldade foi utilizar corretamente o método pop() durante a implementação da funcionalidade de exclusão de músicas no CRUD.
+Durante a implementação, utilizei o método pop() em uma lista diferente daquela que deveria ser modificada, removendo um dado da estrutura incorreta.
+Causa técnica: O método pop() modifica diretamente a lista sobre a qual é chamado. Ao utilizar a variável correspondente a outra lista, a remoção ocorreu na estrutura errada, em vez de acontecer na lista que armazenava o registro que eu desejava excluir.
+Essa dificuldade me ajudou a compreender a importância de identificar corretamente a lista e o índice antes de realizar uma operação de exclusão.
+
+5. **Decisão de ajuste + fonte:** Para corrigir o problema na funcionalidade de exclusão do CRUD, ajustei a variável da lista na qual o método pop() estava sendo chamado, permitindo que a remoção acontecesse na estrutura que armazenava as músicas cadastradas.
+Compreendi que o método pop() modifica diretamente a lista sobre a qual é chamado. Por isso, é necessário identificar corretamente tanto a lista quanto o índice do elemento que será removido.
+
+Fonte: Explicações do professor Rondineli durante a aula sobre os recursos e métodos disponíveis em Python para facilitar a manipulação de listas.
+
+6. **Feedback recebido e o que mudei:** Neste ciclo, não recebi feedback individual específico sobre meu CRUD, apenas acompanhei as explicações gerais do professor Rondineli durante a aula.
+Essas explicações contribuíram para minha compreensão dos métodos disponíveis em Python para manipular listas, principalmente a utilização do pop().
+A partir desse conhecimento, corrigi a variável da lista na qual estava utilizando o método de exclusão, evitando remover dados de uma estrutura incorreta.
+
+7. **Próximo passo:** Pretendia aprofundar meus conhecimentos sobre funções em Python, aprendendo a utilizar a palavra-chave def para definir funções e reduzir a repetição de código no CRUD.
+Apesar de considerar meu código relativamente bem organizado naquele momento, acreditava que a utilização de funções poderia contribuir para reduzir a duplicação de instruções, facilitar a manutenção e permitir a reutilização de trechos de código em diferentes operações do sistema.
 
 ### 🧩 CAMPO 05 — Registro de Revisão por Pares
 *Adaptação do **Logbook do Time** (Apêndice C) para o CRUD individual. Documento atualizado pelo **revisor**. Cada decisão técnica relevante deve ter associado o objeto de conhecimento correspondente.*
@@ -701,47 +725,47 @@ Para isso, precisava aprofundar meu entendimento sobre como localizar corretamen
 
 | | |
 |---|---|
-| **Autor do CRUD revisado** | _nome_ |
-| **Repositório revisado** | _link_ |
-| **Revisor** | _seu nome_ |
+| **Autor do CRUD revisado** | Davi Gael Lopes |
+| **Repositório revisado** | https://github.com/deuspato/PriVer |
+| **Revisor** | Marcos Oliveira Ferreira |
 | **Unidade curricular / Semestre** | Algoritmos e Programação · 2026.2 |
-| **Ciclo / data** | _Ciclo 09 · 21/10_ |
+| **Ciclo / data** | _Ciclo 09 · 24/10_ |
 
 **5a. AVANÇO DO PROCESSO DE REVISÃO — análise técnica de cada etapa:**
 
 | ETAPA DO PROCESSO | RESPONSÁVEL | PRAZO | STATUS | DESVIO / JUSTIFICATIVA |
 |---|---|---|---|---|
-| 1. _…_ | Revisor / Autor | _DD/MM_ | ☐ Concluída ☐ Em andamento ☐ Com desvio | _…_ |
-| 2. _…_ | Revisor / Autor | _DD/MM_ | ☐ Concluída ☐ Em andamento ☐ Com desvio | _…_ |
-| 3. _…_ | Revisor / Autor | _DD/MM_ | ☐ Concluída ☐ Em andamento ☐ Com desvio | _…_ |
-| 4. _…_ | Revisor / Autor | _DD/MM_ | ☐ Concluída ☐ Em andamento ☐ Com desvio | _…_ |
-| 5. _…_ | Revisor / Autor | _DD/MM_ | ☐ Concluída ☐ Em andamento ☐ Com desvio | _…_ |
+| 1. Acessar o repositório e verificar a documentação | Revisor | _24/11_ | ☑ Concluída ☐ Em andamento ☐ Com desvio | README vazio e ausência do arquivo requisitos.md na raiz do repositório. |
+| 2. Analisar o código-fonte main.py | Revisor | _24/11_ | ☑ Concluída ☐ Em andamento ☐ Com desvio | Nenhuma dificuldade encontrada durante a leitura do código. |
+| 3. Executar o CRUD e realizar os casos de teste | Revisor | _24/11_ | ☑ Concluída ☐ Em andamento ☐ Com desvio | Foram avaliados 11 casos de teste, sendo 8 aprovados, 1 aprovado com ressalvas e 2 reprovados. Foram identificadas quatro falhas distintas. |
+| 4. Registrar as falhas e elaborar sugestões de melhoria | Revisor | _24/11_ | ☑ Concluída ☐ Em andamento ☐ Com desvio | Foram identificadas as causas técnicas das falhas e propostas sugestões de melhoria. |
+| 5. Apresentar o feedback ao autor | Revisor | _25/11_ | ☑ Concluída ☐ Em andamento ☐ Com desvio | Feedback enviado em 24/11, antes do prazo planejado. O autor respondeu na mesma data, mas ainda não apresentou um posicionamento técnico sobre as sugestões de melhoria. |
 
 **5b. ANÁLISE DE INSUMOS E CRITÉRIOS DE QUALIDADE:**
 
 | RECURSO | QTDE PLANEJADA | QTDE UTILIZADA | VARIAÇÃO | JUSTIFICATIVA TÉCNICA |
 |---|---|---|---|---|
-| _…_ | _…_ | _…_ | _…_ | _…_ |
-| _…_ | _…_ | _…_ | _…_ | _…_ |
-| _…_ | _…_ | _…_ | _…_ | _…_ |
+| Código-fonte (main.py) | 1 | 1 | 0 | Utilizado para analisar as estruturas de dados, o controle de fluxo e identificar as causas técnicas dos erros encontrados durante a execução do CRUD. |
+| Casos de teste | 11 | 11 | 0 | Utilizados para verificar as funcionalidades do CRUD, a validação de entradas e o comportamento do programa diante de situações inválidas. |
+| Arquivo de documentação do projeto | 1 | 0 | -1 | O arquivo README.md estava vazio, impossibilitando a comparação das funcionalidades implementadas com os requisitos documentados. Por isso, utilizei as funcionalidades apresentadas pelo próprio programa como critérios de revisão. |
 
 **5c. CONTROLE DE QUALIDADE:**
-- **Critério ou norma técnica:** _…_
-- **A solução atende?** ☐ Sim ☐ Parcialmente ☐ Não
+- **Critério ou norma técnica:** Funcionamento das quatro operações do CRUD (Create, Read, Update e Delete), validação das entradas, tratamento de erros e compatibilidade com o sistema operacional utilizado durante os testes.
+- **A solução atende?** ☐ Sim ☑ Parcialmente ☐ Não
 
 **5d. GESTÃO DE RISCOS:**
-- **Risco:** _…_
-- **Estratégia de mitigação:** _…_
+- **Risco:** A ausência de documentação dos requisitos poderia dificultar a avaliação das funcionalidades do CRUD. Além disso, os problemas de compatibilidade com o Windows e a falta de tratamento de exceções poderiam interromper a execução do programa e comprometer a continuidade dos testes.
+- **Estratégia de mitigação:** Utilizei as funcionalidades apresentadas pelo próprio programa e a análise do código-fonte como critérios de revisão. Durante os testes, utilizei um arquivo de teste existente e adaptei o formato do caminho, substituindo as barras invertidas por barras normais. Também reiniciei o programa após os erros de execução, permitindo continuar os testes sem modificar o código original do colega.
 
 **5e. RASTREABILIDADE DAS DECISÕES TÉCNICAS — COM VÍNCULO AO CONTEÚDO:**
 
 | DATA | DECISÃO TÉCNICA | RESP. | OBJETO DE CONHECIMENTO MOBILIZADO | FUNDAMENTAÇÃO / REFERÊNCIA |
 |---|---|---|---|---|
-| _DD/MM/AA_ | _…_ | _…_ | _…_ | _…_ |
-| _DD/MM/AA_ | _…_ | _…_ | _…_ | _…_ |
-| _DD/MM/AA_ | _…_ | _…_ | _…_ | _…_ |
-| _DD/MM/AA_ | _…_ | _…_ | _…_ | _…_ |
-| _DD/MM/AA_ | _…_ | _…_ | _…_ | _…_ |
+| 24/11/26 | Sugerir a utilização de os.name para selecionar o comando de limpeza do terminal conforme o sistema operacional. | Revisor | Módulo os e estruturas condicionais. | A utilização de os.name permite identificar o ambiente do sistema operacional e selecionar o comando adequado. [Documentação oficial do Python — os.](https://docs.python.org/pt-br/3/library/os.html#os.name) |
+| 24/11/26 | Sugerir a utilização de try/except para tratar arquivos inexistentes. | Revisor | Tratamento de exceções e manipulação de arquivos. | O tratamento de exceções permite lidar com o FileNotFoundError sem interromper inesperadamente a execução do programa. [Documentação oficial do Python — Erros e exceções.](https://docs.python.org/pt-br/3/tutorial/errors.html) |
+| 24/11/26 | Sugerir a utilização de os.path.basename() e os.path.splitext() para extrair o nome e a extensão do arquivo. | Revisor | Strings, manipulação de caminhos e métodos do módulo os. | Essas funções permitem manipular caminhos de acordo com as convenções do sistema operacional, evitando a extração incorreta do nome do arquivo. [Documentação oficial do Python — os.path.](https://docs.python.org/pt-br/3/library/os.path.html) |
+| 24/11/26 | Sugerir a reorganização da lógica de cadastro para preservar o nome base atualizado. | Revisor | Dicionários, atribuição de valores e controle de fluxo. | A atribuição de um novo valor a uma chave existente substitui seu valor anterior. Por isso, é necessário controlar quando o nome base deve ser alterado. [Documentação oficial do Python — Dicionários.](https://docs.python.org/pt-br/3/tutorial/datastructures.html#dictionaries) |
+| 24/11/26 | Utilizar as funcionalidades apresentadas pelo próprio programa como critérios de avaliação. | Revisor | Operações CRUD, validação de entradas e testes funcionais. | A ausência de documentação preenchida impossibilitou a comparação com os requisitos originais. Utilizei a análise do código-fonte e os 11 casos de teste para avaliar as funcionalidades. Referência: orientações do Logbook AFP 2026.2 sobre revisão por pares. |
 
 > **IMPORTANTE:** Decisão registrada sem objeto de conhecimento associado e sem referência é considerada **não rastreável** e não conta para a avaliação formativa. O vínculo entre processo e conteúdo é obrigatório em todas as decisões relevantes.
 
@@ -757,13 +781,36 @@ Para isso, precisava aprofundar meu entendimento sobre como localizar corretamen
 </details>
 
 #### Registro do Ciclo 10 — 28/10
-1. **Desafio do ciclo (em 1 frase):** _…_
-2. **O que implementei (commits / arquivos / links):** _…_
-3. **Objeto(s) de conhecimento mobilizado(s):** _…_
-4. **Desvio ou erro encontrado + causa técnica:** _…_
-5. **Decisão de ajuste + fonte:** _…_
-6. **Feedback recebido e o que mudei:** _…_
-7. **Próximo passo:** _…_
+1. **Desafio do ciclo (em 1 frase):** Aprender a definir funções utilizando def, compreender a diferença entre parâmetros e argumentos e utilizar o return para retornar um valor específico ou um conjunto de dados.
+
+2. **O que implementei (commits / arquivos / links):** Durante este ciclo, estudei o funcionamento das funções em Python separadamente do desenvolvimento do meu CRUD de upload de músicas, o UpSpot.
+Ainda não implementei funções próprias no projeto, pois decidi manter a estrutura existente do código enquanto aprofundava meus conhecimentos sobre esse conteúdo.
+Apesar de considerar meu código relativamente bem organizado, reconheci que a modularização poderia contribuir para reduzir a repetição de instruções e facilitar sua manutenção.
+
+Repositório: https://github.com/SantX0/AlgoritimosUNDB
+
+3. **Objeto(s) de conhecimento mobilizado(s):** Os principais objetos de conhecimento foram funções, definição com def, parâmetros, argumentos, retorno de valores e modularização.
+Compreendi que a palavra-chave def permite definir uma função, reunindo instruções que podem ser executadas quando ela é chamada.
+Também aprendi que os parâmetros são definidos na declaração da função e recebem os valores fornecidos durante sua chamada, enquanto os argumentos são os valores passados para esses parâmetros.
+Outro conhecimento mobilizado foi o comando return, que permite retornar um resultado e encerrar a execução da função.
+
+4. **Desvio ou erro encontrado + causa técnica:** MMinha principal dificuldade foi diferenciar parâmetros de argumentos e compreender corretamente o funcionamento do return.
+Inicialmente, confundia os nomes definidos na declaração de uma função com os valores fornecidos durante sua chamada. Também apresentava dificuldades para compreender como retornar um resultado e utilizá-lo em outra parte do programa.
+
+Causa técnica: Minha dificuldade estava relacionada à compreensão da passagem de valores entre a chamada e a definição de uma função, assim como ao fluxo de execução e retorno dos dados.
+Como ainda não havia implementado funções próprias no CRUD, essa dificuldade ocorreu durante o estudo do conteúdo, e não durante a execução do projeto.
+
+5. **Decisão de ajuste + fonte:** Decidi não modularizar meu CRUD naquele momento, pois ainda não compreendia completamente o funcionamento das funções e não havia desenvolvido o hábito de organizar minhas instruções utilizando def.
+Optei por manter a estrutura existente enquanto aprofundava meus conhecimentos sobre parâmetros, argumentos e retorno de valores, para posteriormente aplicar esses conceitos de maneira adequada no projeto.
+
+Fonte: Documentação oficial do Python — seção Definindo funções.
+
+6. **Feedback recebido e o que mudei:** Ele identificou alguns problemas, como a opção 7 do menu não estar habilitada e inconsistências relacionadas à diferenciação entre letras maiúsculas e minúsculas (case-sensitivity).
+A partir desse feedback, identifiquei pontos que precisam ser aprimorados no projeto. Pretendo corrigir esses problemas e tentar modularizar o código utilizando funções, buscando melhorar sua organização e reduzir a repetição de instruções.
+Até a data de preenchimento deste registro (24/11/2026), essas alterações permanecem planejadas.
+
+7. **Próximo passo:** Aprofundar meus conhecimentos sobre a definição e utilização de funções com def, buscando aplicá-las futuramente nas funcionalidades do meu CRUD.
+Também pretendo compreender melhor a passagem de parâmetros, o retorno de valores e a reutilização de código, além de iniciar meus estudos sobre recursividade e entender como uma função pode chamar a si mesma.
 
 ## 🔵 CICLO 11 — 04/11 — Recursividade
 
@@ -779,35 +826,67 @@ Para isso, precisava aprofundar meu entendimento sobre como localizar corretamen
 </details>
 
 #### Registro do Ciclo 11 — 04/11
-1. **Desafio do ciclo (em 1 frase):** _…_
-2. **O que implementei (commits / arquivos / links):** _…_
-3. **Objeto(s) de conhecimento mobilizado(s):** _…_
-4. **Desvio ou erro encontrado + causa técnica:** _…_
-5. **Decisão de ajuste + fonte:** _…_
-6. **Feedback recebido e o que mudei:** _…_
-7. **Próximo passo:** _…_
+1. **Desafio do ciclo (em 1 frase):** Compreender o funcionamento da recursividade, entender como uma função pode chamar a si mesma, identificar suas condições de parada e diferenciá-la dos laços de repetição.
+
+2. **O que implementei (commits / arquivos / links):** Durante este ciclo, estudei apenas a parte teórica sobre recursividade, buscando compreender seu funcionamento e sua relação com as funções em Python.
+Não implementei funções recursivas no meu CRUD de upload de músicas, o UpSpot, pois ainda estava aprofundando meus conhecimentos sobre funções e modularização.
+Mantive a estrutura existente do projeto, utilizando os laços de repetição while e for nas funcionalidades que necessitam de repetição e iteração.
+
+Repositório: https://github.com/SantX0/AlgoritimosUNDB
+
+3. **Objeto(s) de conhecimento mobilizado(s):** Os principais objetos de conhecimento foram recursividade, funções, caso base, caso recursivo, retorno de valores e iteração.
+Compreendi que a recursividade ocorre quando uma função chama a si mesma para resolver determinado problema.
+Também aprendi os seguintes conceitos:
+Caso base: condição que permite encerrar as chamadas recursivas.
+Caso recursivo: etapa em que a função chama a si mesma para continuar a resolução do problema.
+Iteração: execução repetida de instruções por meio de estruturas como while e for, sem a necessidade de chamadas recursivas.
+
+Esses conhecimentos contribuíram para ampliar minha compreensão sobre as diferentes formas de realizar repetições em Python.
+
+4. **Desvio ou erro encontrado + causa técnica:** Minha principal dificuldade foi compreender como funciona o retorno de valores nas chamadas recursivas e diferenciar a recursividade dos laços de repetição.
+Apesar de compreender que uma função recursiva chama a si mesma, ainda apresentava dificuldades para entender como os valores retornados por cada chamada contribuíam para o resultado final.
+
+Causa técnica: Minha dificuldade estava relacionada à compreensão do fluxo de execução das chamadas recursivas e do retorno de valores entre essas chamadas, diferentemente dos laços while e for, com os quais já possuía maior familiaridade.
+Como estudei apenas a parte teórica neste ciclo, não identifiquei erros de execução relacionados à recursividade no meu CRUD.
+
+5. **Decisão de ajuste + fonte:** Decidi não implementar recursividade no meu CRUD naquele momento, pois ainda não dominava suficientemente o conteúdo, principalmente o funcionamento das chamadas recursivas e o retorno dos valores.
+Optei por manter os laços while e for que já utilizava no projeto, enquanto aprofundava meus conhecimentos sobre funções e recursividade.
+
+Fonte: Documentação oficial do Python — Programação Funcional.
+
+6. **Feedback recebido e o que mudei:** Neste ciclo, não recebi feedback individual específico sobre meu CRUD.
+Entretanto, as explicações apresentadas durante a aula contribuíram para ampliar minha compreensão sobre funções, recursividade e estruturas de repetição.
+Ainda não realizei alterações no código relacionadas a esse conteúdo, mas passei a compreender melhor que existem diferentes formas de realizar operações repetitivas em Python.
+
+7. **Próximo passo:** Pretendia melhorar meu CRUD, corrigindo os erros identificados e começando a modularizar suas funcionalidades por meio de funções.
+Também pretendia continuar aprofundando meus conhecimentos sobre funções e retorno de valores, buscando reduzir a repetição de código e melhorar a organização e a qualidade do projeto.
 
 ### 🧩 CAMPO 06 — Próximos passos para a defesa
 *AV Qualis — Grupo 3 | Individual | Quinta 26/11, 23h59*
 
 **6a. Decisão técnica que defendo com plena autonomia — o que aprendi que é exclusivamente meu e não consigo transferir para nenhum colega:**
 
-> _…_
+> Uma decisão técnica que consigo defender com autonomia é a utilização de IDs para identificar as músicas cadastradas, independentemente de suas posições na lista. Escolhi essa abordagem porque ela facilita a busca das músicas sem que eu precise me preocupar com a posição que cada registro ocupa. Mesmo quando uma música é excluída e os índices dos elementos seguintes mudam, os IDs das demais músicas permanecem os mesmos.
 
 **6b. Lacuna técnica e plano de ação para saná-la:**
 
-- **Lacuna:** _…_
-- **Plano de ação (passos e datas):** _…_
+- **Lacuna:** Ainda não domino completamente a utilização de funções em Python, principalmente a definição com def, a passagem de parâmetros e argumentos e o uso do return para modularizar meu CRUD.
+- **Plano de ação (passos e datas):** 
+24/11/2026: Revisar a documentação do Python sobre definição de funções.
+25/11/2026: Identificar trechos repetitivos e iniciar a modularização das funcionalidades do CRUD.
+26/11/2026: Testar as funcionalidades modificadas e corrigir possíveis erros antes da entrega.
 
 **6c. Pergunta que a banca pode fazer — com resposta fundamentada (mínimo 5 linhas):**
 
-- **Pergunta:** _…_
+- **Pergunta:** Por que você decidiu utilizar identificadores (IDs) independentes dos índices da lista no seu CRUD e quais problemas poderiam ocorrer nas operações de busca, atualização e exclusão caso utilizasse somente os índices?
 - **Resposta:**
 
-> _…_
+> Decidi utilizar IDs independentes dos índices para evitar problemas relacionados à posição dos dados na lista pois o índice representa a posição de uma música, enquanto o ID funciona como um identificador próprio de cada registro e quando uma música é excluída, os índices dos elementos seguintes podem mudar, enquanto seus IDs permanecem os mesmos.
 
-**Objeto de conhecimento mobilizado:** _…_
-**Fonte:** _…_
+A utilização dos IDs facilita a localização das músicas, pois não preciso me preocupar com a posição que cada registro ocupa na lista. Para realizar a busca, utilizo o laço for e estruturas condicionais para comparar o ID informado pelo usuário com os identificadores das músicas cadastradas. Essa decisão também facilita as operações de atualização e exclusão, reduzindo o risco de modificar ou remover uma música diferente da desejada.
+
+**Objeto de conhecimento mobilizado:** Listas, índices, identificadores, busca sequencial, laços de repetição e estruturas condicionais.
+**Fonte:** DOWNEY, Allen B. Pense em Python: Pense como um cientista da computação. Capítulo 10 — Listas; explicações do professor Rondineli durante a aula sobre buscas.
 
 ## 🔵 CICLO 12 — 11/11 — Refatoração e qualidade de código
 
