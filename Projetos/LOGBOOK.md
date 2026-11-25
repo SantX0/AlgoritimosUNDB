@@ -659,9 +659,9 @@ Para isso, precisava aprofundar meu entendimento sobre como localizar corretamen
 - [x] Registros dos Ciclos 09, 10, 11 e 12 com os 7 itens
 - [x] Campo 05: duas revisões (Ciclos 09 e 12), blocos 5a a 5e
 - [x] Campo 06: decisão autônoma, lacuna com plano, pergunta da banca com 5 linhas ou mais
-- [ ] Campo 07: 7a a 7e, com 3 objetos, 2 equívocos corrigidos e transferência
-- [ ] Coerência entre Campo 01 e Campo 07
-- [ ] Painel de acompanhamento completo
+- [x] Campo 07: 7a a 7e, com 3 objetos, 2 equívocos corrigidos e transferência
+- [x] Coerência entre Campo 01 e Campo 07
+- [x] Painel de acompanhamento completo
 
 ## 🔵 CICLO 09 — 21/10 — Atualização e exclusão: CRUD completo
 
